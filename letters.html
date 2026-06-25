@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Love Letters — Draw a random memory from the vault." />
+  <title>Love Letters — Film & Forever</title>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Lora:ital,wght@0,400;0,500;1,400&family=Dancing+Script:wght@400;500;600&family=Cinzel:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/letters.css" />
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursor-ring"></div>
+  <div class="grain"></div>
+  <div class="page-curtain"></div>
+
+  <div class="mobile-nav-overlay" id="mobile-nav">
+    <button class="mobile-nav-close" id="mobile-nav-close">✕</button>
+    <nav>
+      <ul class="mobile-nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="story.html">Our Story</a></li>
+        <li><a href="blogs.html">Letters</a></li>
+        <li><a href="playlist.html">Our Songs</a></li>
+        <li><a href="letters.html" class="active">Love Letters</a></li>
+      </ul>
+    </nav>
+    <p class="mobile-nav-deco">Written in stars ✦</p>
+  </div>
+
+  <header class="nav" id="nav">
+    <a href="index.html" class="nav-logo">Jeya <em>&</em> Kiel</a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="story.html">Our Story</a></li>
+        <li><a href="blogs.html">Letters</a></li>
+        <li><a href="playlist.html">Our Songs</a></li>
+        <li><a href="letters.html" class="active">Love Letters</a></li>
+      </ul>
+    </nav>
+    <button class="nav-hamburger" id="nav-hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <section class="letters-hero">
+    <div class="letters-hero-content">
+      <h1>Love <em>Letters</em></h1>
+      <p>Click for surprise!</p>
+    </div>
+    <div class="letters-hero-deco"></div>
+  </section>
+
+  <section class="letters-section">
+    
+    <div class="roulette-controls">
+      <button id="draw-btn" class="draw-btn">Draw a Letter ✦</button>
+      <p id="roulette-status" class="roulette-status">Waiting to draw...</p>
+    </div>
+
+    <div class="envelope-card" id="master-envelope">
+      <div class="envelope">
+        
+        <div class="envelope-flap">
+          <div class="envelope-left">
+            <span class="envelope-month-tag">✦ Sealed with love</span>
+            <h2 class="envelope-title" id="env-title">A Message For You</h2>
+          </div>
+          <div class="envelope-right">
+            <div class="wax-seal" id="env-seal">K</div>
+          </div>
+        </div>
+
+        <div class="letter-content">
+          <div class="letter-paper">
+            
+            <div class="letter-stamp">
+              <span class="letter-stamp-icon">🕊️</span>
+              <span class="letter-stamp-label">Forever</span>
+            </div>
+
+            <div class="letter-paper-content">
+              <span class="letter-salutation">My Dearest Jeya,</span>
+              
+              <div class="letter-body" id="env-body">
+                <p>The contents of this letter are currently hidden. Please click the "Draw a Letter" button above to let fate choose a message for you.</p>
+              </div>
+              
+              <div class="letter-closing">
+                <span class="letter-closing-word">Endlessly yours,</span>
+                <span class="letter-signature">Kiel</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="letters-quote">
+    <blockquote>"I will never stop writing about you, because I will never stop finding new reasons to love you."</blockquote>
+  </section>
+
+  <script src="js/main.js"></script>
+  <script src="js/letters.js"></script>
+</body>
+</html>

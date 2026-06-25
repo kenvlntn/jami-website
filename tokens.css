@@ -1,0 +1,71 @@
+/* Hallmark tokens · Film & Forever letters page */
+:root {
+  --color-paper: oklch(97.5% 0.019 78);
+  --color-paper-soft: oklch(94.8% 0.026 73);
+  --color-paper-warm: oklch(91.8% 0.035 70);
+  --color-surface: oklch(99% 0.01 85);
+  --color-ink: oklch(24% 0.04 47);
+  --color-muted: oklch(49% 0.045 51);
+  --color-faint: oklch(66% 0.047 55);
+  --color-line: oklch(84% 0.035 62);
+  --color-accent: oklch(40% 0.097 18);
+  --color-accent-strong: oklch(31% 0.083 18);
+  --color-rose: oklch(68% 0.083 32);
+  --color-gold: oklch(70% 0.11 78);
+  --color-white: oklch(99.2% 0.008 86);
+  --color-overlay: oklch(16% 0.03 42 / 72%);
+  --color-hero-scrim-start: oklch(27% 0.058 18 / 82%);
+  --color-hero-scrim-end: oklch(31% 0.07 28 / 72%);
+  --color-hero-copy: oklch(95% 0.014 78 / 88%);
+  --color-hero-glow: oklch(75% 0.11 77 / 24%);
+  --color-hero-depth: oklch(18% 0.03 32 / 22%);
+  --color-quote-rule: oklch(90% 0.044 77 / 20%);
+  --color-quote-mark: oklch(100% 0 0 / 5%);
+  --color-card-sheen: oklch(100% 0 0 / 44%);
+  --color-card-warm-edge: oklch(84% 0.064 59 / 42%);
+  --color-card-back-glow: oklch(82% 0.1 61 / 18%);
+  --color-modal-control: oklch(100% 0 0 / 10%);
+  --color-modal-control-hover: oklch(100% 0 0 / 18%);
+  --color-modal-control-line: oklch(100% 0 0 / 28%);
+  --color-modal-shadow: oklch(0% 0 0 / 45%);
+  --color-soon-bg: oklch(98.5% 0.016 81 / 74%);
+  --color-shadow: oklch(25% 0.04 45 / 13%);
+  --color-shadow-strong: oklch(22% 0.04 45 / 22%);
+
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-body: 'Lora', Georgia, serif;
+  --font-script: 'Dancing Script', cursive;
+
+  --space-2xs: 0.25rem;
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 4rem;
+  --space-4xl: 6rem;
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-md: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.5rem;
+  --text-2xl: 2rem;
+  --text-display: clamp(3rem, 8vw, 6.6rem);
+
+  --radius-sm: 0.375rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --rule-thin: 1px;
+  --rule-medium: 1.5px;
+
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in: cubic-bezier(0.32, 0, 0.67, 0);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --ease-soft: cubic-bezier(0.16, 1, 0.3, 1);
+  --dur-fast: 160ms;
+  --dur-med: 280ms;
+  --dur-slow: 520ms;
+  --dur-xslow: 760ms;
+}

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Our beautiful love story — a place where every moment lives forever." />
+  <title>Us — Our Love Story</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Shared + Page Styles -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/index.css" />
+
+  <!-- Tailwind config -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { dancing: ['"Dancing Script"', 'cursive'], playfair: ['"Playfair Display"', 'serif'], lora: ['Lora', 'serif'] },
+          colors: {
+            cream: '#fdf7ef', blush: '#f0d5cb', rose: '#c4877a',
+            wine: '#7a3d4a', darkbrown: '#2c1810', gold: '#c9954a',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <!-- Custom cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursor-ring"></div>
+
+  <!-- Film grain -->
+  <div class="grain"></div>
+
+  <!-- Page transition curtain -->
+  <div class="page-curtain"></div>
+
+  <!-- Floating hearts canvas -->
+  <canvas id="hearts-canvas"></canvas>
+
+  <!-- ── Mobile Nav Overlay ── -->
+  <div class="mobile-nav-overlay" id="mobile-nav">
+    <button class="mobile-nav-close" id="mobile-nav-close" aria-label="Close menu">✕</button>
+    <nav>
+      <ul class="mobile-nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="story.html">Our Story</a></li>
+        <li><a href="blogs.html">Letters</a></li>
+        <li><a href="playlist.html">Our Songs</a></li>
+        <li><a href="letters.html">Love Letters</a></li>
+      </ul>
+    </nav>
+    <p class="mobile-nav-deco">Made with ♡ just for you</p>
+  </div>
+
+  <!-- ── Navigation ── -->
+  <header class="nav" id="nav">
+    <a href="index.html" class="nav-logo">Jeya <em>&</em> Kiel</a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="story.html">Our Story</a></li>
+        <li><a href="blogs.html">Letters</a></li>
+        <li><a href="playlist.html">Our Songs</a></li>
+        <li><a href="letters.html">Love Letters</a></li>
+      </ul>
+    </nav>
+    <button class="nav-hamburger" id="nav-hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- ════════════════════════════════════
+       HERO — Polaroid Grid Background
+       ════════════════════════════════════ -->
+  <section style="position:relative; min-height:100dvh; overflow:hidden;">
+
+    <!-- Polaroid Grid (background, fixed) -->
+<div class="polaroid-scene" id="polaroid-scene">
+      <div class="polaroid-grid" id="polaroid-grid">
+
+        <div class="p-col">
+          <div class="p-col-inner">
+            <div class="grid-polaroid"><div class="grid-polaroid-photo" style="background:linear-gradient(135deg,#fde8c0,#e8a870)"><img src="images/31.jpg" alt="Memory 31"></div></div>
+            <div class="grid-polaroid"><div class="grid-polaroid-photo" style="background:linear-gradient(150deg,#f0d5cb,#c4877a)"><img src="images/32.jpg" alt="Memory 32"></div></div>
+            <div class="grid-polaroid"><div class="grid-polaroid-photo" style="background:linear-gradient(135deg,#d0e8f0,#78a8c8)"><img src="images/33.jpg" alt="Memory 33"></div></div>
+            <div class="grid-polaroid"><div class="grid-polaroid-photo" style="background:linear-gradient(160deg,#e8d5f0,#a878c4)"><img src="images/34.jpg" alt="Memory 34"></div></div>
+            <div class="grid-polaroid"><div class="grid-polaroid-photo" style="background:linear-gradient(135deg,#f5e0c8,#c49870)"><img src="images/35.jpg" alt="Memory 35"></div></div>
+            <div class="grid-polaroid"><div class="grid-polaroid-photo" style="background:linear-gradient(150deg,#d5f0e8,#78c4a8)"><img src="images/36.jpg" alt="Memory 36"></div></div>
+            <div class="grid-polaroid"><div class="grid-polaroid-photo" style="background:linear-gradient(135deg,#f5d0d8,#e08090)"><img src="images/37.jpg" alt="Memory 37"></div></div>
+            <div class="grid-polaroid"><div class="grid-polaroid-photo" style="background:linear-gradient(160deg,#d0e0f5,#7090e0)"><img src="images/38.jpg" alt="Memory 38"></div></div>
+            <div class="grid-polaroid"><div class="grid-polaroid-photo" style="background:linear-gradient(135deg,#f0ead5,#c4b888)"><img src="images/39.jpg" alt="Memory 39"></div></div>
+            <div class="grid-polaroid"><div class="grid-polaroid-photo" style="background:linear-gradient(160deg,#f0d5e8,#c478a8)"><img src="images/40.jpg" alt="Memory 40"></div></div>
+            <div class="grid-polaroid"><div class="grid-polaroid-photo" style="background:linear-gradient(135deg,#fde8c0,#e8a870)"><img src="images/31.jpg" alt="Memory 31"></div></div>
+            <div class="grid-polaroid"><div class="grid-polaroid-photo" style="background:linear-gradient(150deg,#f0d5cb,#c4877a)"><img src="images/32.jpg" alt="Memory 32"></div></div>
+            <div class="grid-polaroid"><div class="grid-polaroid-photo" style="background:linear-gradient(135deg,#d0e8f0,#78a8c8)"><img src="images/33.jpg" alt="Memory 33"></div></div>
+            <div class="grid-polaroid"><div class="grid-polaroid-photo" style="background:linear-gradient(160deg,#e8d5f0,#a878c4)"><img src="images/34.jpg" alt="Memory 34"></div></div>
+            <div class="grid-polaroid"><div class="grid-polaroid-photo" style="background:linear-gradient(135deg,#f5e0c8,#c49870)"><img src="images/35.jpg" alt="Memory 35"></div></div>
+            <div class="grid-polaroid"><div class="grid-polaroid-photo" style="background:linear-gradient(150deg,#d5f0e8,#78c4a8)"><img src="images/36.jpg" alt="Memory 36"></div></div>
+            <div class="grid-polaroid"><div class="grid-polaroid-photo" style="background:linear-gradient(135deg,#f5d0d8,#e08090)"><img src="images/37.jpg" alt="Memory 37"></div></div>
+            <div class="grid-polaroid"><div class="grid-polaroid-photo" style="background:linear-gradient(160deg,#d0e0f5,#7090e0)"><img src="images/38.jpg" alt="Memory 38"></div></div>
+            <div class="grid-polaroid"><div class="grid-polaroid-photo" style="background:linear-gradient(135deg,#f0ead5,#c4b888)"><img src="images/39.jpg" alt="Memory 39"></div></div>
+            <div class="grid-polaroid"><div class="grid-polaroid-photo" style="background:linear-gradient(160deg,#f0d5e8,#c478a8)"><img src="images/40.jpg" alt="Memory 40"></div></div>
+          </div>
+        </div>
+
+        <div class="p-col">
+          <div class="p-col-inner">
+            <div class="grid-polaroid"><div class="grid-polaroid-photo" style="background:linear-gradient(145deg,#f8e0d0,#e09070)"><img src="images/41.jpg" alt="Memory 41"></div></div>
+            <div class="grid-polaroid"><div class="grid-polaroid-photo" style="background:linear-gradient(135deg,#e0f0d8,#90c878)"><img src="images/42.jpg" alt="Memory 42"></div></div>
+            <div class="grid-polaroid"><div class="grid-polaroid-photo" style="background:linear-gradient(155deg,#f8d8e8,#d880a8)"><img src="images/43.jpg" alt="Memory 43"></div></div>
+            <div class="grid-polaroid"><div class="grid-polaroid-photo" style="background:linear-gradient(140deg,#d8e8f8,#80a8d8)"><img src="images/44.jpg" alt="Memory 44"></div></div>
+            <div class="grid-polaroid"><div class="grid-polaroid-photo" style="background:linear-gradient(150deg,#f0e8d0,#c8a860)"><img src="images/45.jpg" alt="Memory 45"></div></div>
+            <div class="grid-polaroid"><div class="grid-polaroid-photo" style="background:linear-gradient(135deg,#e8d0f0,#9068c0)"><img src="images/46.jpg" alt="Memory 46"></div></div>
+            <div class="grid-polaroid"><div class="grid-polaroid-photo" style="background:linear-gradient(160deg,#f8e8c8,#d8a848)"><img src="images/47.jpg" alt="Memory 47"></div></div>
+            <div class="grid-polaroid"><div class="grid-polaroid-photo" style="background:linear-gradient(145deg,#d8f0e0,#68c088)"><img src="images/48.jpg" alt="Memory 48"></div></div>
+            <div class="grid-polaroid"><div class="grid-polaroid-photo" style="background:linear-gradient(135deg,#f8d0c8,#e07060)"><img src="images/49.jpg" alt="Memory 49"></div></div>
+            <div class="grid-polaroid"><div class="grid-polaroid-photo" style="background:linear-gradient(155deg,#e0d8f8,#8070d8)"><img src="images/50.jpg" alt="Memory 50"></div></div>
+            <div class="grid-polaroid"><div class="grid-polaroid-photo" style="background:linear-gradient(145deg,#f8e0d0,#e09070)"><img src="images/41.jpg" alt="Memory 41"></div></div>
+            <div class="grid-polaroid"><div class="grid-polaroid-photo" style="background:linear-gradient(135deg,#e0f0d8,#90c878)"><img src="images/42.jpg" alt="Memory 42"></div></div>
+            <div class="grid-polaroid"><div class="grid-polaroid-photo" style="background:linear-gradient(155deg,#f8d8e8,#d880a8)"><img src="images/43.jpg" alt="Memory 43"></div></div>
+            <div class="grid-polaroid"><div class="grid-polaroid-photo" style="background:linear-gradient(140deg,#d8e8f8,#80a8d8)"><img src="images/44.jpg" alt="Memory 44"></div></div>
+            <div class="grid-polaroid"><div class="grid-polaroid-photo" style="background:linear-gradient(150deg,#f0e8d0,#c8a860)"><img src="images/45.jpg" alt="Memory 45"></div></div>
+            <div class="grid-polaroid"><div class="grid-polaroid-photo" style="background:linear-gradient(135deg,#e8d0f0,#9068c0)"><img src="images/46.jpg" alt="Memory 46"></div></div>
+            <div class="grid-polaroid"><div class="grid-polaroid-photo" style="background:linear-gradient(160deg,#f8e8c8,#d8a848)"><img src="images/47.jpg" alt="Memory 47"></div></div>
+            <div class="grid-polaroid"><div class="grid-polaroid-photo" style="background:linear-gradient(145deg,#d8f0e0,#68c088)"><img src="images/48.jpg" alt="Memory 48"></div></div>
+            <div class="grid-polaroid"><div class="grid-polaroid-photo" style="background:linear-gradient(135deg,#f8d0c8,#e07060)"><img src="images/49.jpg" alt="Memory 49"></div></div>
+            <div class="grid-polaroid"><div class="grid-polaroid-photo" style="background:linear-gradient(155deg,#e0d8f8,#8070d8)"><img src="images/50.jpg" alt="Memory 50"></div></div>
+          </div>
+        </div>
+
+        <div class="p-col">
+          <div class="p-col-inner">
+            <div class="grid-polaroid"><div class="grid-polaroid-photo" style="background:linear-gradient(135deg,#f0d8c8,#d09060)"><img src="images/51.jpg" alt="Memory 51"></div></div>
+            <div class="grid-polaroid"><div class="grid-polaroid-photo" style="background:linear-gradient(150deg,#e8f0d0,#a8c860)"><img src="images/52.jpg" alt="Memory 52"></div></div>
+            <div class="grid-polaroid"><div class="grid-polaroid-photo" style="background:linear-gradient(160deg,#f8d8d0,#e88070)"><img src="images/53.jpg" alt="Memory 53"></div></div>
+            <div class="grid-polaroid"><div class="grid-polaroid-photo" style="background:linear-gradient(145deg,#c8d8f8,#6888d8)"><img src="images/54.jpg" alt="Memory 54"></div></div>
+            <div class="grid-polaroid"><div class="grid-polaroid-photo" style="background:linear-gradient(135deg,#f8f0d0,#e8d080)"><img src="images/55.jpg" alt="Memory 55"></div></div>
+            <div class="grid-polaroid"><div class="grid-polaroid-photo" style="background:linear-gradient(155deg,#e0f0f8,#60a8c8)"><img src="images/56.jpg" alt="Memory 56"></div></div>
+            <div class="grid-polaroid"><div class="grid-polaroid-photo" style="background:linear-gradient(140deg,#f8e0f0,#d860a8)"><img src="images/57.jpg" alt="Memory 57"></div></div>
+            <div class="grid-polaroid"><div class="grid-polaroid-photo" style="background:linear-gradient(160deg,#e0e8d0,#889858)"><img src="images/58.jpg" alt="Memory 58"></div></div>
+            <div class="grid-polaroid"><div class="grid-polaroid-photo" style="background:linear-gradient(135deg,#f8d8c0,#e89858)"><img src="images/59.jpg" alt="Memory 59"></div></div>
+            <div class="grid-polaroid"><div class="grid-polaroid-photo" style="background:linear-gradient(150deg,#d8d0f8,#7858d8)"><img src="images/60.jpg" alt="Memory 60"></div></div>
+            <div class="grid-polaroid"><div class="grid-polaroid-photo" style="background:linear-gradient(135deg,#f0d8c8,#d09060)"><img src="images/51.jpg" alt="Memory 51"></div></div>
+            <div class="grid-polaroid"><div class="grid-polaroid-photo" style="background:linear-gradient(150deg,#e8f0d0,#a8c860)"><img src="images/52.jpg" alt="Memory 52"></div></div>
+            <div class="grid-polaroid"><div class="grid-polaroid-photo" style="background:linear-gradient(160deg,#f8d8d0,#e88070)"><img src="images/53.jpg" alt="Memory 53"></div></div>
+            <div class="grid-polaroid"><div class="grid-polaroid-photo" style="background:linear-gradient(145deg,#c8d8f8,#6888d8)"><img src="images/54.jpg" alt="Memory 54"></div></div>
+            <div class="grid-polaroid"><div class="grid-polaroid-photo" style="background:linear-gradient(135deg,#f8f0d0,#e8d080)"><img src="images/55.jpg" alt="Memory 55"></div></div>
+            <div class="grid-polaroid"><div class="grid-polaroid-photo" style="background:linear-gradient(155deg,#e0f0f8,#60a8c8)"><img src="images/56.jpg" alt="Memory 56"></div></div>
+            <div class="grid-polaroid"><div class="grid-polaroid-photo" style="background:linear-gradient(140deg,#f8e0f0,#d860a8)"><img src="images/57.jpg" alt="Memory 57"></div></div>
+            <div class="grid-polaroid"><div class="grid-polaroid-photo" style="background:linear-gradient(160deg,#e0e8d0,#889858)"><img src="images/58.jpg" alt="Memory 58"></div></div>
+            <div class="grid-polaroid"><div class="grid-polaroid-photo" style="background:linear-gradient(135deg,#f8d8c0,#e89858)"><img src="images/59.jpg" alt="Memory 59"></div></div>
+            <div class="grid-polaroid"><div class="grid-polaroid-photo" style="background:linear-gradient(150deg,#d8d0f8,#7858d8)"><img src="images/60.jpg" alt="Memory 60"></div></div>
+          </div>
+        </div>
+
+        <div class="p-col">
+          <div class="p-col-inner">
+            <div class="grid-polaroid"><div class="grid-polaroid-photo" style="background:linear-gradient(135deg,#f8e8d0,#d8a860)"><img src="images/61.jpg" alt="Memory 61"></div></div>
+            <div class="grid-polaroid"><div class="grid-polaroid-photo" style="background:linear-gradient(150deg,#f0c8d8,#c060a0)"><img src="images/62.jpg" alt="Memory 62"></div></div>
+            <div class="grid-polaroid"><div class="grid-polaroid-photo" style="background:linear-gradient(140deg,#d0e0c8,#709060)"><img src="images/63.jpg" alt="Memory 63"></div></div>
+            <div class="grid-polaroid"><div class="grid-polaroid-photo" style="background:linear-gradient(155deg,#e8c8d8,#b86090)"><img src="images/64.jpg" alt="Memory 64"></div></div>
+            <div class="grid-polaroid"><div class="grid-polaroid-photo" style="background:linear-gradient(135deg,#d8e8f0,#6898b8)"><img src="images/65.jpg" alt="Memory 65"></div></div>
+            <div class="grid-polaroid"><div class="grid-polaroid-photo" style="background:linear-gradient(160deg,#f0e0c8,#c09050)"><img src="images/66.jpg" alt="Memory 66"></div></div>
+            <div class="grid-polaroid"><div class="grid-polaroid-photo" style="background:linear-gradient(145deg,#e8d0f0,#8848c8)"><img src="images/67.jpg" alt="Memory 67"></div></div>
+            <div class="grid-polaroid"><div class="grid-polaroid-photo" style="background:linear-gradient(135deg,#f8e0c0,#d8a040)"><img src="images/68.jpg" alt="Memory 68"></div></div>
+            <div class="grid-polaroid"><div class="grid-polaroid-photo" style="background:linear-gradient(155deg,#c8f0e0,#48b888)"><img src="images/69.jpg" alt="Memory 69"></div></div>
+            <div class="grid-polaroid"><div class="grid-polaroid-photo" style="background:linear-gradient(140deg,#f8c8d0,#e05870)"><img src="images/70.jpg" alt="Memory 70"></div></div>
+            <div class="grid-polaroid"><div class="grid-polaroid-photo" style="background:linear-gradient(135deg,#f8e8d0,#d8a860)"><img src="images/61.jpg" alt="Memory 61"></div></div>
+            <div class="grid-polaroid"><div class="grid-polaroid-photo" style="background:linear-gradient(150deg,#f0c8d8,#c060a0)"><img src="images/62.jpg" alt="Memory 62"></div></div>
+            <div class="grid-polaroid"><div class="grid-polaroid-photo" style="background:linear-gradient(140deg,#d0e0c8,#709060)"><img src="images/63.jpg" alt="Memory 63"></div></div>
+            <div class="grid-polaroid"><div class="grid-polaroid-photo" style="background:linear-gradient(155deg,#e8c8d8,#b86090)"><img src="images/64.jpg" alt="Memory 64"></div></div>
+            <div class="grid-polaroid"><div class="grid-polaroid-photo" style="background:linear-gradient(135deg,#d8e8f0,#6898b8)"><img src="images/65.jpg" alt="Memory 65"></div></div>
+            <div class="grid-polaroid"><div class="grid-polaroid-photo" style="background:linear-gradient(160deg,#f0e0c8,#c09050)"><img src="images/66.jpg" alt="Memory 66"></div></div>
+            <div class="grid-polaroid"><div class="grid-polaroid-photo" style="background:linear-gradient(145deg,#e8d0f0,#8848c8)"><img src="images/67.jpg" alt="Memory 67"></div></div>
+            <div class="grid-polaroid"><div class="grid-polaroid-photo" style="background:linear-gradient(135deg,#f8e0c0,#d8a040)"><img src="images/68.jpg" alt="Memory 68"></div></div>
+            <div class="grid-polaroid"><div class="grid-polaroid-photo" style="background:linear-gradient(155deg,#c8f0e0,#48b888)"><img src="images/69.jpg" alt="Memory 69"></div></div>
+            <div class="grid-polaroid"><div class="grid-polaroid-photo" style="background:linear-gradient(140deg,#f8c8d0,#e05870)"><img src="images/70.jpg" alt="Memory 70"></div></div>
+          </div>
+        </div>
+
+        <div class="p-col">
+          <div class="p-col-inner">
+            <div class="grid-polaroid"><div class="grid-polaroid-photo" style="background:linear-gradient(145deg,#f0d0c0,#c87858)"><img src="images/71.jpg" alt="Memory 71"></div></div>
+            <div class="grid-polaroid"><div class="grid-polaroid-photo" style="background:linear-gradient(135deg,#c8e8d8,#58a878)"><img src="images/72.jpg" alt="Memory 72"></div></div>
+            <div class="grid-polaroid"><div class="grid-polaroid-photo" style="background:linear-gradient(160deg,#e8c0d8,#b05890)"><img src="images/73.jpg" alt="Memory 73"></div></div>
+            <div class="grid-polaroid"><div class="grid-polaroid-photo" style="background:linear-gradient(150deg,#c0d8f0,#5888c8)"><img src="images/74.jpg" alt="Memory 74"></div></div>
+            <div class="grid-polaroid"><div class="grid-polaroid-photo" style="background:linear-gradient(135deg,#f8f0c8,#d8c048)"><img src="images/75.jpg" alt="Memory 75"></div></div>
+            <div class="grid-polaroid"><div class="grid-polaroid-photo" style="background:linear-gradient(155deg,#d8c8f0,#8860c8)"><img src="images/76.jpg" alt="Memory 76"></div></div>
+            <div class="grid-polaroid"><div class="grid-polaroid-photo" style="background:linear-gradient(140deg,#f0e8c0,#c0a840)"><img src="images/77.jpg" alt="Memory 77"></div></div>
+            <div class="grid-polaroid"><div class="grid-polaroid-photo" style="background:linear-gradient(160deg,#d0f0e0,#50b878)"><img src="images/78.jpg" alt="Memory 78"></div></div>
+            <div class="grid-polaroid"><div class="grid-polaroid-photo" style="background:linear-gradient(135deg,#f8d0c0,#e07850)"><img src="images/79.jpg" alt="Memory 79"></div></div>
+            <div class="grid-polaroid"><div class="grid-polaroid-photo" style="background:linear-gradient(150deg,#e0c8e8,#9858b8)"><img src="images/80.jpg" alt="Memory 80"></div></div>
+            <div class="grid-polaroid"><div class="grid-polaroid-photo" style="background:linear-gradient(145deg,#f0d0c0,#c87858)"><img src="images/71.jpg" alt="Memory 71"></div></div>
+            <div class="grid-polaroid"><div class="grid-polaroid-photo" style="background:linear-gradient(135deg,#c8e8d8,#58a878)"><img src="images/72.jpg" alt="Memory 72"></div></div>
+            <div class="grid-polaroid"><div class="grid-polaroid-photo" style="background:linear-gradient(160deg,#e8c0d8,#b05890)"><img src="images/73.jpg" alt="Memory 73"></div></div>
+            <div class="grid-polaroid"><div class="grid-polaroid-photo" style="background:linear-gradient(150deg,#c0d8f0,#5888c8)"><img src="images/74.jpg" alt="Memory 74"></div></div>
+            <div class="grid-polaroid"><div class="grid-polaroid-photo" style="background:linear-gradient(135deg,#f8f0c8,#d8c048)"><img src="images/75.jpg" alt="Memory 75"></div></div>
+            <div class="grid-polaroid"><div class="grid-polaroid-photo" style="background:linear-gradient(155deg,#d8c8f0,#8860c8)"><img src="images/76.jpg" alt="Memory 76"></div></div>
+            <div class="grid-polaroid"><div class="grid-polaroid-photo" style="background:linear-gradient(140deg,#f0e8c0,#c0a840)"><img src="images/77.jpg" alt="Memory 77"></div></div>
+            <div class="grid-polaroid"><div class="grid-polaroid-photo" style="background:linear-gradient(160deg,#d0f0e0,#50b878)"><img src="images/78.jpg" alt="Memory 78"></div></div>
+            <div class="grid-polaroid"><div class="grid-polaroid-photo" style="background:linear-gradient(135deg,#f8d0c0,#e07850)"><img src="images/79.jpg" alt="Memory 79"></div></div>
+            <div class="grid-polaroid"><div class="grid-polaroid-photo" style="background:linear-gradient(150deg,#e0c8e8,#9858b8)"><img src="images/80.jpg" alt="Memory 80"></div></div>
+          </div>
+        </div>
+
+        <div class="p-col">
+          <div class="p-col-inner">
+            <div class="grid-polaroid"><div class="grid-polaroid-photo" style="background:linear-gradient(135deg,#f8e0d8,#e09880)"><img src="images/81.jpg" alt="Memory 81"></div></div>
+            <div class="grid-polaroid"><div class="grid-polaroid-photo" style="background:linear-gradient(150deg,#d0e8c8,#68a858)"><img src="images/82.jpg" alt="Memory 82"></div></div>
+            <div class="grid-polaroid"><div class="grid-polaroid-photo" style="background:linear-gradient(160deg,#f0c8e8,#c858a8)"><img src="images/83.jpg" alt="Memory 83"></div></div>
+            <div class="grid-polaroid"><div class="grid-polaroid-photo" style="background:linear-gradient(140deg,#c8d8e8,#6888a8)"><img src="images/84.jpg" alt="Memory 84"></div></div>
+            <div class="grid-polaroid"><div class="grid-polaroid-photo" style="background:linear-gradient(135deg,#f0d8b8,#c89848)"><img src="images/85.jpg" alt="Memory 85"></div></div>
+            <div class="grid-polaroid"><div class="grid-polaroid-photo" style="background:linear-gradient(155deg,#e8c8d8,#a85878)"><img src="images/86.jpg" alt="Memory 86"></div></div>
+            <div class="grid-polaroid"><div class="grid-polaroid-photo" style="background:linear-gradient(145deg,#d8e8d0,#789860)"><img src="images/87.jpg" alt="Memory 87"></div></div>
+            <div class="grid-polaroid"><div class="grid-polaroid-photo" style="background:linear-gradient(160deg,#f8d0e0,#d85880)"><img src="images/88.jpg" alt="Memory 88"></div></div>
+            <div class="grid-polaroid"><div class="grid-polaroid-photo" style="background:linear-gradient(135deg,#e0e8f8,#7888d8)"><img src="images/89.jpg" alt="Memory 89"></div></div>
+            <div class="grid-polaroid"><div class="grid-polaroid-photo" style="background:linear-gradient(150deg,#f8e8b8,#d8b838)"><img src="images/90.jpg" alt="Memory 90"></div></div>
+            <div class="grid-polaroid"><div class="grid-polaroid-photo" style="background:linear-gradient(135deg,#f8e0d8,#e09880)"><img src="images/81.jpg" alt="Memory 81"></div></div>
+            <div class="grid-polaroid"><div class="grid-polaroid-photo" style="background:linear-gradient(150deg,#d0e8c8,#68a858)"><img src="images/82.jpg" alt="Memory 82"></div></div>
+            <div class="grid-polaroid"><div class="grid-polaroid-photo" style="background:linear-gradient(160deg,#f0c8e8,#c858a8)"><img src="images/83.jpg" alt="Memory 83"></div></div>
+            <div class="grid-polaroid"><div class="grid-polaroid-photo" style="background:linear-gradient(140deg,#c8d8e8,#6888a8)"><img src="images/84.jpg" alt="Memory 84"></div></div>
+            <div class="grid-polaroid"><div class="grid-polaroid-photo" style="background:linear-gradient(135deg,#f0d8b8,#c89848)"><img src="images/85.jpg" alt="Memory 85"></div></div>
+            <div class="grid-polaroid"><div class="grid-polaroid-photo" style="background:linear-gradient(155deg,#e8c8d8,#a85878)"><img src="images/86.jpg" alt="Memory 86"></div></div>
+            <div class="grid-polaroid"><div class="grid-polaroid-photo" style="background:linear-gradient(145deg,#d8e8d0,#789860)"><img src="images/87.jpg" alt="Memory 87"></div></div>
+            <div class="grid-polaroid"><div class="grid-polaroid-photo" style="background:linear-gradient(160deg,#f8d0e0,#d85880)"><img src="images/88.jpg" alt="Memory 88"></div></div>
+            <div class="grid-polaroid"><div class="grid-polaroid-photo" style="background:linear-gradient(135deg,#e0e8f8,#7888d8)"><img src="images/89.jpg" alt="Memory 89"></div></div>
+            <div class="grid-polaroid"><div class="grid-polaroid-photo" style="background:linear-gradient(150deg,#f8e8b8,#d8b838)"><img src="images/90.jpg" alt="Memory 90"></div></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Overlays -->
+    <div class="scene-tint"></div>
+    <div class="scene-vignette"></div>
+    <div class="scene-leak"></div>
+
+    <!-- Hero Content -->
+    <div class="hero-layer">
+      <div class="hero-badge">
+        <span class="dot"></span>
+        Since June 26, 2023
+      </div>
+
+      <h1 class="hero-title">
+        <span class="name">Jeya</span>
+        <span class="ampersand">&amp;</span>
+        <em>Kiel</em>
+      </h1>
+
+      <p class="hero-sub">
+        Every photo a memory. Every moment, forever ours.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="story.html" class="btn btn-outline-white">
+          <span>Our Story</span>
+          <span>→</span>
+        </a>
+        <a href="blogs.html" class="btn btn-wine">
+          <span>Our Letters</span>
+          <span>♡</span>
+        </a>
+      </div>
+
+      <!-- Love Counter -->
+      <div class="love-counter">
+        <div class="counter-item">
+            <span class="counter-num" id="counter-years">—</span>
+            <span class="counter-label">Years Strong</span>
+        </div>
+        <div class="counter-divider"></div>
+        <div class="counter-item">
+            <span class="counter-num" id="counter-months">—</span>
+            <span class="counter-label">Monthsaries</span>
+        </div>
+        <div class="counter-divider"></div>
+        <div class="counter-item">
+            <span class="counter-num" id="counter-days">—</span>
+            <span class="counter-label">Days Together</span>
+        </div>
+      </div>
+      <div class="love-counter">
+        <div class="counter-divider hidden md:block"></div>
+        <div class="counter-item">
+            <span class="counter-num" id="counter-hours">—</span>
+            <span class="counter-label">Hours</span>
+        </div>
+        <div class="counter-divider"></div>
+        <div class="counter-item">
+            <span class="counter-num" id="counter-minutes">—</span>
+            <span class="counter-label">Minutes</span>
+        </div>
+        <div class="counter-divider"></div>
+        <div class="counter-item">
+            <span class="counter-num" id="counter-seconds">—</span>
+            <span class="counter-label">Seconds</span>
+        </div>
+    </div>
+
+  </section><!-- /hero section -->
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+  <script src="js/index.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,383 @@
+/* ===========================
+   LETTERS PAGE — letters.css
+   =========================== */
+
+/* ── Hero ── */
+.letters-hero {
+  min-height: 60vh;
+  background: var(--cream-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 9rem 2rem 5rem;
+  position: relative;
+  overflow: hidden;
+}
+.letters-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    -45deg,
+    transparent,
+    transparent 22px,
+    rgba(196,135,122,0.05) 22px,
+    rgba(196,135,122,0.05) 23px
+  );
+  pointer-events: none;
+}
+.letters-hero::after {
+  content: '✉';
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 28rem;
+  color: var(--blush);
+  opacity: 0.12;
+  pointer-events: none;
+  line-height: 1;
+}
+.letters-hero-content { position: relative; z-index: 2; }
+.letters-hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(3rem, 9vw, 6.5rem);
+  font-style: italic;
+  font-weight: 700;
+  color: var(--dark);
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+}
+.letters-hero h1 em { color: var(--wine); font-style: normal; }
+.letters-hero p {
+  margin-top: 1.2rem;
+  font-family: 'Lora', serif;
+  font-size: 1.05rem;
+  color: var(--text-light);
+  max-width: 480px;
+  margin-left: auto; margin-right: auto;
+  line-height: 1.8;
+}
+.letters-hero-deco {
+  position: absolute;
+  bottom: 0; left: 0; width: 100%; height: 80px;
+  background: linear-gradient(to bottom, transparent, var(--cream));
+  pointer-events: none; z-index: 3;
+}
+
+/* ── Roulette Controls ── */
+.roulette-controls {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.draw-btn {
+  background: var(--wine);
+  color: var(--cream);
+  font-family: 'Cinzel', serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  padding: 1rem 2.5rem;
+  border: 1px solid var(--gold);
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(92, 26, 27, 0.3);
+  transition: all 0.3s ease;
+}
+.draw-btn:hover {
+  background: var(--wine-dark);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(92, 26, 27, 0.4);
+}
+.draw-btn:disabled {
+  background: var(--text-muted);
+  border-color: var(--text-muted);
+  cursor: not-allowed;
+  transform: translateY(0);
+  box-shadow: none;
+}
+.roulette-status {
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.2rem;
+  color: var(--text-muted);
+  margin-top: 1rem;
+  min-height: 1.5rem;
+}
+
+/* ── Letters Container ── */
+.letters-section {
+  padding: 2rem 4rem 8rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* ── Envelope Card ── */
+.envelope-card {
+  margin-bottom: 2rem;
+  position: relative;
+}
+.envelope {
+  background: var(--white);
+  border: 1px solid var(--blush);
+  box-shadow: 0 8px 30px rgba(44, 24, 16, 0.08);
+  position: relative;
+  overflow: hidden;
+  transition: box-shadow 0.4s ease, transform 0.4s ease, border-color 0.4s ease;
+}
+.envelope.is-open {
+  border-color: var(--gold);
+  box-shadow: 0 15px 45px rgba(201, 149, 74, 0.15);
+}
+
+.envelope-flap {
+  padding: 2rem 2.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--cream-dark);
+  position: relative;
+  transition: background 0.4s ease;
+}
+.envelope.is-open .envelope-flap {
+  background: var(--gold-pale);
+  border-bottom-color: var(--gold-light);
+}
+
+/* Roulette Blur Animation Text */
+.spinning-text {
+  filter: blur(4px);
+  opacity: 0.7;
+  transform: scale(0.98);
+  transition: filter 0.1s, opacity 0.1s, transform 0.1s;
+}
+
+.envelope-left {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+.envelope-month-tag {
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.2rem;
+  color: var(--gold);
+}
+.envelope-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  font-style: italic;
+  color: var(--dark);
+}
+
+.envelope-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Wax seal */
+.wax-seal {
+  width: 60px; height: 60px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 35%, var(--wine), var(--wine-dark));
+  display: flex; align-items: center; justify-content: center;
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  color: var(--gold-light);
+  font-size: 1.6rem;
+  box-shadow:
+    0 3px 10px rgba(122,61,74,0.4),
+    inset 0 1px 3px rgba(255,255,255,0.15),
+    inset 0 -1px 3px rgba(0,0,0,0.2);
+  position: relative;
+  flex-shrink: 0;
+  transition: transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.4s ease;
+}
+.envelope.is-open .wax-seal { 
+  transform: rotate(360deg) scale(0.85); 
+  opacity: 0.3; 
+}
+.wax-seal::after {
+  content: '';
+  position: absolute;
+  inset: 4px;
+  border-radius: 50%;
+  border: 1px solid rgba(255,255,255,0.15);
+}
+
+/* ── Letter Content (expandable) ── */
+.letter-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1s cubic-bezier(0.22, 1, 0.36, 1), padding 0.6s ease;
+  padding: 0 3.5rem;
+  background: var(--white);
+}
+.envelope.is-open .letter-content {
+  max-height: 2000px;
+  padding: 3rem 3.5rem 3.5rem;
+}
+
+/* Aged paper texture inside */
+.letter-paper {
+  position: relative;
+  padding: 3.5rem 3.5rem;
+  background: #fdf9f0;
+  border: 1px solid #e8dcc8;
+  box-shadow: inset 0 1px 15px rgba(44,24,16,0.03);
+}
+.letter-paper::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 31px,
+    rgba(196,135,122,0.07) 31px,
+    rgba(196,135,122,0.07) 32px
+  );
+  pointer-events: none;
+}
+.letter-paper-content { position: relative; z-index: 1; }
+
+/* Letter typography */
+.letter-salutation {
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.8rem;
+  color: var(--wine);
+  margin-bottom: 1.5rem;
+  display: block;
+}
+.letter-body {
+  font-family: 'Lora', serif;
+  font-size: 1.1rem;
+  line-height: 2.1;
+  color: var(--text);
+}
+.letter-body p { margin-bottom: 1.5rem; }
+.letter-body p:last-child { margin-bottom: 0; }
+.letter-body p:first-child::first-letter {
+  font-family: 'Playfair Display', serif;
+  font-size: 4rem;
+  font-style: italic;
+  color: var(--wine);
+  float: left;
+  line-height: 0.75;
+  margin: 0.15em 0.1em 0 0;
+  font-weight: 700;
+}
+.letter-closing {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.letter-closing-word {
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.4rem;
+  color: var(--text-light);
+  display: block;
+}
+.letter-signature {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.5rem;
+  color: var(--wine);
+  margin-top: 0.3rem;
+  display: block;
+}
+
+/* Postage stamp */
+.letter-stamp {
+  position: absolute;
+  top: 2rem; right: 2rem;
+  width: 65px;
+  padding: 6px;
+  background: var(--white);
+  border: 2px solid var(--blush);
+  box-shadow: 0 4px 12px var(--shadow-sm);
+  text-align: center;
+  font-size: 1.8rem;
+  transform: rotate(4deg);
+}
+.letter-stamp-label {
+  font-family: 'Lora', serif;
+  font-size: 0.55rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-top: 4px;
+  display: block;
+}
+.letter-stamp::before {
+  content: ''; position: absolute; inset: -8px;
+  border: 2px dotted var(--blush); pointer-events: none;
+}
+
+/* ── Featured Quote ── */
+.letters-quote {
+  background: var(--wine);
+  padding: 5rem 3rem;
+  text-align: center;
+}
+.letters-quote blockquote {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.3rem, 3vw, 2rem);
+  font-style: italic;
+  color: var(--cream);
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+.letters-quote cite {
+  display: block;
+  margin-top: 1.2rem;
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.1rem;
+  color: var(--gold-light);
+  font-style: normal;
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .letters-section { padding: 2rem 1.5rem 6rem; }
+  .envelope-flap { padding: 1.5rem; }
+  .envelope.is-open .letter-content { padding: 2rem 1.5rem 2.5rem; }
+  .letter-paper { padding: 2rem 1.5rem; }
+  .envelope-title { font-size: 1.5rem; }
+  .letter-stamp { display: none; }
+}
+@media (max-width: 480px) {
+  .letters-hero { padding: 8rem 1.5rem 4rem; }
+  .letters-hero::after { font-size: 16rem; }
+  .wax-seal { width: 45px; height: 45px; font-size: 1.2rem; }
+}
+
+/* ══════════════════════════════════════════════
+   NAVIGATION COLOR OVERRIDES (Only for this page)
+   ══════════════════════════════════════════════ */
+
+/* 1. Change the main Logo text color */
+#nav .nav-logo {
+  color: var(--dark); /* Replace with any color you want */
+}
+
+/* 2. Change the "&" symbol in the logo */
+#nav .nav-logo em {
+  color: var(--wine); 
+}
+
+/* 3. Change the standard link text colors */
+#nav .nav-links a {
+  color: var(--text-light);
+}
+
+/* 4. Change the color when hovering or when the link is "active" */
+#nav .nav-links a:hover,
+#nav .nav-links a.active {
+  color: var(--wine);
+}
+
+/* 5. Change the color of the 3 lines for the Mobile Hamburger menu */
+#nav .nav-hamburger span {
+  background-color: var(--dark);
+}

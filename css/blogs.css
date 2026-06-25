@@ -1,0 +1,583 @@
+/* ===========================
+   LETTERS PAGE — blogs.css (Ultimate Smooth Edition)
+   =========================== */
+
+/* ══════════════════════════════════════════════
+   ROOT VARIABLES (Matches your main theme)
+   ══════════════════════════════════════════════ */
+:root {
+  --dark: #1a0f0a;
+  --cream: #f9f6f0;
+  --cream-dark: #e8e2d5;
+  --wine: #5c1a1b;
+  --wine-dark: #3a0d0d;
+  --gold: #d4a85a;
+  --gold-light: #eaddb6;
+  --gold-pale: #f4edd8;
+  --white: #ffffff;
+  --blush: #e6c5c0;
+  --blush-light: #f5e4e1;
+  --rose: #c4877a;
+  --text: #2c1810;
+  --text-muted: #8a6a5a;
+  --text-light: #5c4338;
+}
+
+/* ══════════════════════════════════════════════
+   HERO SECTION
+   ══════════════════════════════════════════════ */
+.blogs-hero {
+  min-height: 60vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: 
+    linear-gradient(
+      to bottom, 
+      rgba(26, 15, 10, 0.6) 0%, 
+      rgba(26, 15, 10, 0.85) 100%
+    ),
+    url('../images/why-i-love-you.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding: 8rem 2rem 5rem;
+}
+
+.hero-ambient {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 70% 60% at 50% 50%, rgba(122, 61, 74, .25) 0%, transparent 62%),
+    radial-gradient(ellipse 55% 55% at 75% 35%, rgba(201, 149, 74, .15) 0%,  transparent 58%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.blogs-hero-content {
+  position: relative;
+  z-index: 3;
+  width: 100%;
+  max-width: 800px;
+}
+
+.section-eyebrow {
+  display: block;
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.4rem;
+  color: var(--gold-light);
+  margin-bottom: 0.5rem;
+}
+
+.display-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(3rem, 8vw, 6rem);
+  font-style: normal;
+  font-weight: 700;
+  color: var(--white);
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+
+.display-title em {
+  font-style: italic;
+  color: var(--gold-light);
+}
+
+.hero-divider {
+  width: 120px;
+  height: 2px;
+  background: linear-gradient(to right, transparent, var(--gold), transparent);
+  margin: 1.5rem auto;
+}
+
+.section-body {
+  font-family: 'Lora', serif;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.8;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.blogs-hero-deco {
+  position: absolute;
+  bottom: 0; left: 0; width: 100%; height: 100px;
+  background: linear-gradient(to bottom, transparent, var(--cream));
+  pointer-events: none; z-index: 4;
+}
+/* ════════════════════════════════════════════════════
+   BACKGROUND SCROLLING POLAROIDS (SIDES ONLY)
+   ════════════════════════════════════════════════════ */
+.timeline-polaroid-bg {
+  position: fixed;
+  inset: 0;
+  z-index: -2; 
+  display: flex;
+  justify-content: space-between; 
+  pointer-events: none; 
+}
+
+.polaroid-side {
+  display: flex;
+  gap: 14px;
+  padding: 0 14px;
+  width: calc(50vw - 500px); 
+  overflow: hidden;
+  pointer-events: auto; 
+  opacity: 0.35; 
+  transition: opacity 0.4s ease;
+}
+
+.polaroid-side:hover { opacity: 0.85; }
+
+.p-col {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  flex: 1; 
+}
+.p-col-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.side-left .p-col:nth-child(1) .p-col-inner { animation-name: colScrollUp;   animation-duration: 45s; }
+.side-left .p-col:nth-child(2) .p-col-inner { animation-name: colScrollDown; animation-duration: 38s; }
+.side-right .p-col:nth-child(1) .p-col-inner { animation-name: colScrollUp;   animation-duration: 52s; }
+.side-right .p-col:nth-child(2) .p-col-inner { animation-name: colScrollDown; animation-duration: 41s; }
+
+.polaroid-side:hover .p-col-inner { animation-play-state: paused; }
+
+@keyframes colScrollUp {
+  0%   { transform: translateY(0); }
+  100% { transform: translateY(-50%); }
+}
+@keyframes colScrollDown {
+  0%   { transform: translateY(-50%); }
+  100% { transform: translateY(0); }
+}
+
+.grid-polaroid {
+  background: #ffffff; 
+  padding: 8px 8px 32px; 
+  box-shadow: 0 4px 18px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.05);
+  transition: transform 0.4s ease, box-shadow 0.4s ease, z-index 0s;
+  cursor: default;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.grid-polaroid:hover {
+  transform: scale(1.06) !important;
+  box-shadow: 0 14px 48px rgba(0,0,0,0.2);
+  z-index: 20;
+}
+
+.grid-polaroid-photo {
+  width: 100%;
+  aspect-ratio: 1;
+  overflow: hidden;
+  background: var(--cream, #fdf7ef);
+}
+.grid-polaroid-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.grid-polaroid-caption {
+  position: absolute;
+  bottom: 8px; left: 0; right: 0;
+  text-align: center;
+  font-family: 'Dancing Script', cursive;
+  font-size: 0.85rem;
+  color: var(--darkbrown, #2c1810);
+}
+
+@media (max-width: 1300px) {
+  .timeline-polaroid-bg {
+    display: none;
+  }
+}
+/* ══════════════════════════════════════════════
+   STATS BAR (Matches Gallery Stats)
+   ══════════════════════════════════════════════ */
+.blogs-stats {
+  background: var(--wine);
+  display: flex;
+  justify-content: center;
+  gap: clamp(2rem, 5vw, 5rem);
+  padding: 2.5rem 2rem;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 10;
+}
+
+.stat-item { text-align: center; }
+
+.stat-num {
+  display: block;
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem; font-weight: 700;
+  color: var(--cream); line-height: 1;
+}
+
+.stat-label {
+  display: block;
+  font-family: 'Lora', serif;
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: 0.4rem;
+}
+
+/* ══════════════════════════════════════════════
+   MAIN CONTENT AREA & HEADERS
+   ══════════════════════════════════════════════ */
+.blogs-gallery {
+  padding: 4rem 3rem 8rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.gallery-section-label {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.gallery-label-text {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  font-style: italic;
+  font-weight: 600;
+  color: var(--dark);
+  white-space: nowrap;
+}
+
+.gallery-label-line {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(to right, var(--gold), transparent);
+  opacity: 0.4;
+}
+
+.gallery-label-note {
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+.upcoming-intro {
+  font-family: 'Lora', serif;
+  font-size: 0.95rem;
+  color: var(--text-light);
+  line-height: 1.8;
+  max-width: 600px;
+  margin-bottom: 3rem;
+  font-style: italic;
+}
+
+/* ══════════════════════════════════════════════
+   3D FLIP CARDS (The 31 Reasons)
+   ══════════════════════════════════════════════ */
+.months-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.8rem;
+}
+
+.month-card {
+  background: transparent;
+  perspective: 1200px; /* Gives the 3D depth */
+  aspect-ratio: 4 / 5;
+  cursor: pointer;
+}
+
+/* The inner wrapper that actually flips */
+.month-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.7s cubic-bezier(0.34, 1.56, 0.64, 1); /* Buttery spring effect */
+  transform-style: preserve-3d;
+  box-shadow: 0 10px 30px rgba(44, 24, 16, 0.08);
+  border-radius: 12px;
+}
+
+/* Hover triggering the flip */
+.month-card:hover .month-card-inner {
+  transform: rotateY(180deg) scale(1.05);
+  box-shadow: 0 20px 50px rgba(44, 24, 16, 0.15);
+}
+
+/* Front & Back Base Styles */
+.month-card-front, 
+.month-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden; /* Hides the reverse side */
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+/* Front of the Card */
+.month-card-front {
+  background: var(--white);
+  border: 1px solid var(--cream-dark);
+}
+
+.month-num {
+  font-family: 'Playfair Display', serif;
+  font-size: 4rem;
+  font-weight: 700;
+  color: var(--rose);
+  line-height: 1;
+  transition: transform 0.4s ease;
+}
+
+.month-card:hover .month-num { transform: translateY(-5px); }
+
+.month-label {
+  font-family: 'Lora', serif;
+  font-size: 0.85rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-top: 1rem;
+}
+
+/* Back of the Card (The Reason) */
+.month-card-back {
+  background: linear-gradient(135deg, var(--wine), var(--wine-dark));
+  color: var(--white);
+  transform: rotateY(180deg); /* Pre-flipped so it shows correctly when the parent rotates */
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.month-card-back p {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.3rem;
+  font-style: italic;
+  line-height: 1.5;
+}
+
+/* Highlight Cards (Anniversaries) */
+.month-card.highlight .month-card-front .month-num { color: var(--gold); }
+.month-card.highlight .month-card-back { background: linear-gradient(135deg, var(--gold), #b38538); }
+
+/* ══════════════════════════════════════════════
+   UPCOMING / FULL LETTER CARDS
+   ══════════════════════════════════════════════ */
+.blog-card-soon {
+  background: rgba(255, 255, 255, 0.4);
+  border: 2px dashed var(--cream-dark);
+  border-radius: 12px;
+  aspect-ratio: 4 / 5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1.5rem;
+  transition: all 0.4s ease;
+}
+
+.blog-card-soon-num {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  opacity: 0.5;
+  line-height: 1;
+}
+
+.blog-card-soon-text {
+  font-family: 'Lora', serif;
+  font-size: 0.85rem;
+  color: var(--text-light);
+  margin-top: 1rem;
+  opacity: 0.7;
+}
+
+/* Active Link (Month 32) */
+.blog-card-soon.active {
+  background: var(--white);
+  border: 1px solid var(--rose);
+  box-shadow: 0 10px 30px rgba(44, 24, 16, 0.05);
+  cursor: pointer;
+}
+
+.blog-card-soon.active .blog-card-soon-num { color: var(--wine); opacity: 1; }
+.blog-card-soon.active .blog-card-soon-text { color: var(--rose); opacity: 1; font-weight: 500; }
+.blog-card-soon.active:hover { transform: translateY(-8px); box-shadow: 0 20px 40px rgba(196, 135, 122, 0.15); border-color: var(--wine); }
+
+/* 3rd Anniversary Highlight Placeholder */
+.blog-card-soon.highlight { border-color: var(--gold-light); background: var(--gold-pale); }
+.blog-card-soon.highlight .blog-card-soon-num { color: var(--gold); opacity: 0.8; }
+
+/* ══════════════════════════════════════════════
+   QUOTE SECTION
+   ══════════════════════════════════════════════ */
+.quote-section {
+  padding: 6rem 2rem;
+  background: var(--cream-dark);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.quote-mark {
+  position: absolute;
+  top: -2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: 'Playfair Display', serif;
+  font-size: 15rem;
+  color: var(--blush);
+  line-height: 1;
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+.quote-section blockquote {
+  position: relative;
+  z-index: 1;
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.4rem, 4vw, 2.2rem);
+  font-style: italic;
+  color: var(--dark);
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+.quote-section cite {
+  display: block;
+  margin-top: 1.5rem;
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.2rem;
+  color: var(--text-muted);
+  font-style: normal;
+}
+
+/* ══════════════════════════════════════════════
+   MODAL OVERLAY (Matches Gallery Lightbox)
+   ══════════════════════════════════════════════ */
+.letter-modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease;
+}
+
+.letter-modal-overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.letter-modal-bg {
+  position: absolute;
+  inset: 0;
+  background: rgba(15, 7, 4, 0.92);
+  backdrop-filter: blur(8px);
+}
+
+.letter-modal-image {
+  position: relative;
+  z-index: 1;
+  max-width: min(92vw, 700px);
+  max-height: 90vh;
+  object-fit: contain;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.65);
+  transform: scale(0.9);
+  transition: transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.letter-modal-overlay.active .letter-modal-image {
+  transform: scale(1);
+}
+
+.letter-modal-close {
+  position: absolute;
+  top: 1.5rem;
+  right: 2rem;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: var(--white);
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 5;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.letter-modal-close:hover {
+  background: var(--wine);
+  border-color: var(--wine);
+  transform: scale(1.1);
+}
+
+/* ══════════════════════════════════════════════
+   SCROLL REVEAL ANIMATIONS (Buttery Smooth)
+   ══════════════════════════════════════════════ */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ══════════════════════════════════════════════
+   MOBILE RESPONSIVENESS
+   ══════════════════════════════════════════════ */
+@media (max-width: 768px) {
+  .blogs-hero { padding: 7rem 1.5rem 4rem; }
+  .blogs-stats { gap: 2rem; padding: 2rem 1.5rem; }
+  .stat-num { font-size: 2rem; }
+  .blogs-gallery { padding: 3rem 1.5rem 5rem; }
+  .gallery-section-label { flex-direction: column; align-items: flex-start; gap: 0.5rem; }
+  .gallery-label-line { width: 100%; }
+  .months-grid { grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+  
+  /* Make mobile cards a bit smaller */
+  .month-card-front, .month-card-back { padding: 1rem; }
+  .month-num { font-size: 3rem; }
+  .month-label { font-size: 0.7rem; }
+  .month-card-back p { font-size: 1rem; }
+}
+
+@media (max-width: 480px) {
+  .months-grid { grid-template-columns: 1fr; } /* Stack on tiny phones */
+}

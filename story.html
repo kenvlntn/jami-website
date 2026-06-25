@@ -1,0 +1,1735 @@
+ <!-- HTML FILE -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="The story of us — a beautiful timeline of every moment we've shared." />
+  <title>Our Story — Film & Forever</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/story.css" />
+</head>
+<body>
+
+  <!-- Custom cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursor-ring"></div>
+  <!-- Film grain -->
+  <div class="grain"></div>
+  <!-- Page curtain -->
+  <div class="page-curtain"></div>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav-overlay" id="mobile-nav">
+    <button class="mobile-nav-close" id="mobile-nav-close">✕</button>
+    <nav>
+      <ul class="mobile-nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="story.html">Our Story</a></li>
+        <li><a href="blogs.html">Letters</a></li>
+        <li><a href="playlist.html">Our Songs</a></li>
+        <li><a href="letters.html">Love Letters</a></li>
+      </ul>
+    </nav>
+    <p class="mobile-nav-deco">Written in stars ✦</p>
+  </div>
+
+  <!-- Navigation -->
+  <header class="nav" id="nav">
+    <a href="index.html" class="nav-logo">Jeya <em>&</em> Kiel</a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="story.html" class="active">Our Story</a></li>
+        <li><a href="blogs.html">Letters</a></li>
+        <li><a href="playlist.html">Our Songs</a></li>
+        <li><a href="letters.html">Love Letters</a></li>
+      </ul>
+    </nav>
+    <button class="nav-hamburger" id="nav-hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+<div class="timeline-polaroid-bg" aria-hidden="true">
+    
+    <div class="polaroid-side side-left">
+      <div class="p-col">
+        <div class="p-col-inner">
+          <div class="grid-polaroid"><div class="grid-polaroid-photo"><img src="images/1.jpg" alt="Memory"></div></div>
+          <div class="grid-polaroid"><div class="grid-polaroid-photo"><img src="images/2.jpg" alt="Memory"></div></div>
+          <div class="grid-polaroid"><div class="grid-polaroid-photo"><img src="images/3.jpg" alt="Memory"></div></div>
+          <div class="grid-polaroid"><div class="grid-polaroid-photo"><img src="images/4.jpg" alt="Memory"></div></div>
+          <div class="grid-polaroid"><div class="grid-polaroid-photo"><img src="images/5.jpg" alt="Memory"></div></div>
+          <div class="grid-polaroid"><div class="grid-polaroid-photo"><img src="images/6.jpg" alt="Memory"></div></div>
+          <div class="grid-polaroid"><div class="grid-polaroid-photo"><img src="images/7.jpg" alt="Memory"></div></div>
+          <div class="grid-polaroid"><div class="grid-polaroid-photo"><img src="images/8.jpg" alt="Memory"></div></div>
+        </div>
+      </div>
+      <div class="p-col">
+        <div class="p-col-inner">
+          <div class="grid-polaroid"><div class="grid-polaroid-photo"><img src="images/9.jpg" alt="Memory"></div></div>
+          <div class="grid-polaroid"><div class="grid-polaroid-photo"><img src="images/10.jpg" alt="Memory"></div></div>
+          <div class="grid-polaroid"><div class="grid-polaroid-photo"><img src="images/11.jpg" alt="Memory"></div></div>
+          <div class="grid-polaroid"><div class="grid-polaroid-photo"><img src="images/12.jpg" alt="Memory"></div></div>
+          <div class="grid-polaroid"><div class="grid-polaroid-photo"><img src="images/13.jpg" alt="Memory"></div></div>
+          <div class="grid-polaroid"><div class="grid-polaroid-photo"><img src="images/14.jpg" alt="Memory"></div></div>
+          <div class="grid-polaroid"><div class="grid-polaroid-photo"><img src="images/15.jpg" alt="Memory"></div></div>
+          <div class="grid-polaroid"><div class="grid-polaroid-photo"><img src="images/16.jpg" alt="Memory"></div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="polaroid-side side-right">
+      <div class="p-col">
+        <div class="p-col-inner">
+          <div class="grid-polaroid"><div class="grid-polaroid-photo"><img src="images/17.jpg" alt="Memory"></div></div>
+          <div class="grid-polaroid"><div class="grid-polaroid-photo"><img src="images/18.jpg" alt="Memory"></div></div>
+          <div class="grid-polaroid"><div class="grid-polaroid-photo"><img src="images/19.jpg" alt="Memory"></div></div>
+          <div class="grid-polaroid"><div class="grid-polaroid-photo"><img src="images/20.jpg" alt="Memory"></div></div>
+          <div class="grid-polaroid"><div class="grid-polaroid-photo"><img src="images/21.jpg" alt="Memory"></div></div>
+          <div class="grid-polaroid"><div class="grid-polaroid-photo"><img src="images/22.jpg" alt="Memory"></div></div>
+          <div class="grid-polaroid"><div class="grid-polaroid-photo"><img src="images/23.jpg" alt="Memory"></div></div>
+          <div class="grid-polaroid"><div class="grid-polaroid-photo"><img src="images/24.jpg" alt="Memory"></div></div>
+        </div>
+      </div>
+      <div class="p-col">
+        <div class="p-col-inner">
+          <div class="grid-polaroid"><div class="grid-polaroid-photo"><img src="images/25.jpg" alt="Memory"></div></div>
+          <div class="grid-polaroid"><div class="grid-polaroid-photo"><img src="images/26.jpg" alt="Memory"></div></div>
+          <div class="grid-polaroid"><div class="grid-polaroid-photo"><img src="images/27.jpg" alt="Memory"></div></div>
+          <div class="grid-polaroid"><div class="grid-polaroid-photo"><img src="images/28.jpg" alt="Memory"></div></div>
+          <div class="grid-polaroid"><div class="grid-polaroid-photo"><img src="images/29.jpg" alt="Memory"></div></div>
+          <div class="grid-polaroid"><div class="grid-polaroid-photo"><img src="images/30.jpg" alt="Memory"></div></div>
+          <div class="grid-polaroid"><div class="grid-polaroid-photo"><img src="images/31.jpg" alt="Memory"></div></div>
+          <div class="grid-polaroid"><div class="grid-polaroid-photo"><img src="images/32.jpg" alt="Memory"></div></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ══════════════════════════════
+       HERO
+       ══════════════════════════════ -->
+    <section class="story-hero">
+    
+    <picture>
+      <source media="(max-width: 768px)" srcset="images/story-cover-phone.png" />
+      
+      <img src="images/story-cover.png" alt="The Story of Us" class="story-hero-img" />
+    </picture>
+    
+    <div class="story-hero-deco"></div>
+    
+    </section>
+
+
+  <!-- ══════════════════════════════
+       TIMELINE
+       ══════════════════════════════ -->
+<!-- ══════════════════════════════
+       TIMELINE
+       ══════════════════════════════ -->
+<main class="timeline-section">
+
+  <!-- Spine -->
+  <div class="timeline-spine">
+    <div class="timeline-spine-fill"></div>
+  </div>
+
+  <!-- ─── Milestone: Before Relationship ─── -->
+  <div class="tl-milestone reveal">
+    <div class="tl-milestone-inner">
+      <span>✦</span> BEFORE RELATIONSHIP ERA <span>✦</span>
+    </div>
+  </div>
+
+  <!-- Entry 1 -->
+  <div class="tl-item">
+    <div class="tl-content">
+      <span class="tl-date-tag">✦ Nov 15, 2020</span>
+      <h3 class="tl-title">First Interaction</h3>
+      <p class="tl-desc">Where it all started. Nagreact ka lang sa chat ko but eventually, you replied din naman. We didn't became so close right away and we started talking kapag bored ako or when a social issue comes up where we rant our thoughts to each other.</p>
+      <p class="tl-tag">💬 "You had me at hello." — Jerry Maguire</p>
+    </div>
+    <div class="tl-dot"><div class="tl-dot-circle"></div><span class="tl-dot-year">2020</span></div>
+    <div class="tl-media"><div class="tl-polaroid"><div class="tl-polaroid-photo"><img src="images/first-interaction.png" alt="First hello"></div><div class="tl-polaroid-caption">First hello</div></div></div>
+  </div>
+  <div class="tl-year-marker reveal">
+    <span>2 0 2 3</span>
+  </div>
+  <!-- Entry 2 -->
+  <div class="tl-item">
+    <div class="tl-content">
+      <span class="tl-date-tag">✦ Feb 16, 2023</span>
+      <h3 class="tl-title">First Meet-Up</h3>
+      <p class="tl-desc">We finally met in person! It's actually out of nowhere but that's where my feelings started to develop sa'yo. Your eyes are so captivating and I couldn't help but to admire them. After that, I started to look forward to talk and to see you.</p>
+      <p class="tl-tag">💬 "Your eyes are where I'm lost in." — Blue by Zayn</p>
+    </div>
+    <div class="tl-dot"><div class="tl-dot-circle"></div><span class="tl-dot-year">2023</span></div>
+    <div class="tl-media"><div class="tl-polaroid"><div class="tl-polaroid-photo"><img src="images/first-glance.png" alt="First meet"></div><div class="tl-polaroid-caption">First meet</div></div></div>
+  </div>
+
+  <!-- Entry 3 -->
+  <div class="tl-item tl-item-full">
+    <div class="tl-content">
+      <span class="tl-date-tag">✦ Feb 25, 2023</span>
+      <h3 class="tl-title">First Hangout (with your friends)</h3>
+      <p class="tl-desc">It was during SHS intramurals tapos biglang nag-aya sila Jana sa house nila to hang out. It was a fun and memorable experience. Mas nakilala pa kita lalo sa personal kaya mas lalo akong nahuhulog sa'yo.First time din na nakipaghangout ako with your friends.</p>
+      <p class="tl-tag">☕ "I like me better when I'm with you." — Lauv</p>
+    </div>
+    <div class="tl-dot"><div class="tl-dot-circle"></div><span class="tl-dot-year">Feb</span></div>
+    
+    <div class="tl-media">
+      <div class="polaroid-group">
+        <div class="tl-polaroid">
+          <div class="tl-polaroid-photo">
+            <img src="images/first-hangout-1.jpg" alt="Hangout Pic 1">
+          </div>
+          <div class="tl-polaroid-caption">On the way pauwi</div>
+        </div>
+        <div class="tl-polaroid">
+          <div class="tl-polaroid-photo">
+            <img src="images/first-hangout-2.jpg" alt="Hangout Pic 2">
+          </div>
+          <div class="tl-polaroid-caption">Before ng hangout natin</div>
+        </div>
+        <div class="tl-polaroid">
+          <div class="tl-polaroid-photo">
+            <img src="images/first-hangout-3.jpg" alt="Hangout Pic 2">
+          </div>
+          <div class="tl-polaroid-caption">With Jana's cat. Ang cute niya 'di ba?</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Entry 4 -->
+  <div class="tl-item">
+    <div class="tl-content">
+      <span class="tl-date-tag">✦ Feb 27, 2023</span>
+      <h3 class="tl-title">First Flowers</h3>
+      <p class="tl-desc">The first time I gave you flowers. This is also the first time na makakarecieve ka ng flowers from someone else. Handmade flowers pa bigay ko sa'yo panis. I remember na allergic ka sa real flowers kaya simula this point, puro handmade or dried flowers na binibigay ko sa'yong flowers. Despite of you having allergies, I still want you to experience the joy of receiving flowers.</p>
+      <p class="tl-tag">💐 "You belong among the wildflowers." — Tom Petty</p>
+    </div>
+    <div class="tl-dot"><div class="tl-dot-circle"></div><span class="tl-dot-year">Feb</span></div>
+    <div class="tl-media"><div class="tl-polaroid"><div class="tl-polaroid-photo"><img src="images/first-flower.jpg" alt="First flowers"></div><div class="tl-polaroid-caption">First flowers</div></div></div>
+  </div>
+
+  <!-- Entry 5 -->
+  <div class="tl-item">
+    <div class="tl-content">
+      <span class="tl-date-tag">✦ Mar 5, 2023</span>
+      <h3 class="tl-title">Confession of Feelings</h3>
+      <p class="tl-desc">Unplanned confession but I'm grateful that you like me too. Dapat sa personal ako aamin that time pero naunahan ako ng saya kaya ayan pero I'm glad that the shoot I shot went in and that would be the beginning of our journey together pero wala munang label this time hehe.</p>
+      <p class="tl-tag">💌 "I would never fall in love until I found her. I said, 'I would never fall unless it's you I fall into.'"<br>- Until I Found You, Stephen Sanchez</p>
+    </div>
+    <div class="tl-dot"><div class="tl-dot-circle"></div><span class="tl-dot-year">Mar</span></div>
+    <div class="tl-media"><div class="tl-polaroid"><div class="tl-polaroid-photo"><img src="images/confession.png" alt="Confession"></div><div class="tl-polaroid-caption">Confession</div></div></div>
+  </div>
+
+  <!-- Entry 6 -->
+  <div class="tl-item">
+    <div class="tl-content">
+      <span class="tl-date-tag">✦ Mar 9, 2023</span>
+      <h3 class="tl-title">First "ILY" to one another.</h3>
+      <p class="tl-desc">The first time you said "I love you" to me. I remember how dumb I look that time kasi sobrang kinikilig na ako. Para akong tangang nasigaw sa unan sa sobrang kilig. I really felt that time na naiinlove ka na rin talaga sa'kin.</p>
+      <p class="tl-tag">💖 "I love you 3000." — Avengers: Endgame</p>
+    </div>
+    <div class="tl-dot"><div class="tl-dot-circle"></div><span class="tl-dot-year">Mar</span></div>
+    <div class="tl-media"><div class="tl-polaroid"><div class="tl-polaroid-photo"><img src="images/first-ily.png" alt="First ILY"></div><div class="tl-polaroid-caption">First ILY</div></div></div>
+  </div>
+
+  <!-- Entry 7 -->
+  <div class="tl-item">
+    <div class="tl-content">
+      <span class="tl-date-tag">✦ Mar 16, 2023</span>
+      <h3 class="tl-title">First Holding Hands</h3>
+      <p class="tl-desc">The first time I held your hand. Kunyaring magpapalakihan lang ng kamay eh sabay hawak pero ayoko na ring pakawalan kamay mo eh. They are so soft and warm to hold to. I will always long na mahawakan ang iyong kamay.</p>
+      <p class="tl-tag">🤝 "Oh please, say to me you'll let me be your man and please, say to me you'll let me hold your hand."<br>- I Want to Hold Your Hand, The Beatles</p>
+    </div>
+    <div class="tl-dot"><div class="tl-dot-circle"></div><span class="tl-dot-year">Mar</span></div>
+    <div class="tl-media"><div class="tl-polaroid"><div class="tl-polaroid-photo"><img src="images/first-holding-hands.jpg" alt="Hand in hand"></div><div class="tl-polaroid-caption">Hand in hand</div></div></div>
+  </div>
+
+  <!-- Entry 8 -->
+  <div class="tl-item tl-item-full">
+    <div class="tl-content">
+      <span class="tl-date-tag">✦ Mar 20, 2023</span>
+      <h3 class="tl-title">First Ring</h3>
+      <p class="tl-desc">The first time I gave you a ring. It was a paper ring that I made for you with a letter attached to it. I'm looking forward to give you a wedding ring someday.</p>
+      <p class="tl-tag">💍 "I like shiny things, but I'd marry you with paper rings"<br>- Paper Rings, Taylor Swift</p>
+    </div>
+    <div class="tl-dot"><div class="tl-dot-circle"></div><span class="tl-dot-year">Mar</span></div>
+    
+    <div class="tl-media">
+      <div class="polaroid-group">
+        <div class="tl-polaroid">
+          <div class="tl-polaroid-photo">
+            <img src="images/first-ring.jpg" alt="First Ring">
+          </div>
+          <div class="tl-polaroid-caption">Us showing the paper ring</div>
+        </div>
+        <div class="tl-polaroid">
+          <div class="tl-polaroid-photo">
+            <img src="images/first-ring2.jpg" alt="First Ring 2">
+          </div>
+          <div class="tl-polaroid-caption">What comes with the ring</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Entry 9 -->
+  <div class="tl-item tl-item-full">
+    <div class="tl-content">
+      <span class="tl-date-tag">✦ Mar 25, 2023</span>
+      <h3 class="tl-title">First Hug and Kiss</h3>
+      <p class="tl-desc">It was the first time I hugged you and the first time we kissed and it came out of nowhere. I remember na it's during Bandalasik and we're enjoying our mini concert sa school. 
+        I remember asking you if I can hug you that time and you agreed. Grabe mga butterflies sa tiyan ko sa sobrang kilig ko that time. I love every second of hugging you lalo na kapag love song ang pinapatugtog kasi mas nagiging enjoyable ang pagyakap ko sa'yo.
+      Then out of nowhere, you kissed me on the cheek. I was so surprised with it and I couldn't believe it. Then I use the moment to ask you if I can kiss you on your cheeks too and you said yes. There was a little bit of awkwardness but it felt so good and
+      grabe yung saya ko that time. One of the most unforgettable moments of my life and I loved every second of it.</p>
+      <p class="tl-tag">☕ "Sa bawat sandali na tayo ay magkayakap nang mahigpit, taglay mong init ang bumabalot sa 'king nilalamig na damdamin" <br>- Tahanan, Adie</p>
+    </div>
+    <div class="tl-dot"><div class="tl-dot-circle"></div><span class="tl-dot-year">Mar</span></div>
+    <div class="tl-media">
+      <div class="polaroid-group">
+        <div class="tl-polaroid">
+          <div class="tl-polaroid-photo">
+            <img src="images/first-hug.png" alt="Hangout Pic 1">
+          </div>
+        </div>
+        <div class="tl-polaroid">
+          <div class="tl-polaroid-photo">
+            <img src="images/first-hug2.png" alt="Hangout Pic 2">
+          </div>
+        </div>
+        <div class="tl-polaroid">
+          <div class="tl-polaroid-photo">
+            <img src="images/first-hug3.png" alt="Hangout Pic 2">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Entry 10 -->
+  <div class="tl-item tl-item-full">
+    <div class="tl-content">
+      <span class="tl-date-tag">✦ Mar 30, 2023</span>
+      <h3 class="tl-title">First Park Date</h3>
+      <p class="tl-desc">The first time we went to the park together. We went to Promenade and we had a great time. We shared our pictures while talking about a lot of things. We also drew some cute arts in each other's hands.</p>
+      <p class="tl-tag">🌳 "Clouds are shrouding us in moments unforgettable. You twist to fit the mold that I am in" <br>- Sunday Morning, Maroon 5</p>
+    </div>
+    <div class="tl-dot"><div class="tl-dot-circle"></div><span class="tl-dot-year">Mar</span></div>
+    <div class="tl-media">
+      <div class="polaroid-group">
+        <div class="tl-polaroid">
+          <div class="tl-polaroid-photo">
+            <img src="images/first-park-date.png" alt="Hangout Pic 1">
+          </div>
+        </div>
+        <div class="tl-polaroid">
+          <div class="tl-polaroid-photo">
+            <img src="images/first-park-date2.png" alt="Hangout Pic 2">
+          </div>
+        </div>
+        <div class="tl-polaroid">
+          <div class="tl-polaroid-photo">
+            <img src="images/first-park-date3.png" alt="Hangout Pic 2">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Entry 11 -->
+  <div class="tl-item tl-item-full">
+    <div class="tl-content">
+      <span class="tl-date-tag">✦ Apr 11, 2023</span>
+      <h3 class="tl-title">First Arcade Date</h3>
+      <p class="tl-desc">The first time we went to the arcade together with just the two of us. We played sa Timezone District Imus that time. We played a lot of games and it's the first time na nagkaraoke tayo together. I remember na I kissed you on your forehead na nagpakilig sa'yo nang sobra that time hehe.</p>
+      <p class="tl-tag">🕹️ "Everything is a game, but love is the prize."</p>
+    </div>
+    <div class="tl-dot"><div class="tl-dot-circle"></div><span class="tl-dot-year">Apr</span></div>
+    <div class="tl-media">
+      <div class="polaroid-group">
+        <div class="tl-polaroid">
+          <div class="tl-polaroid-photo">
+            <img src="images/first-arcade2.png" alt="Hangout Pic 1">
+          </div>
+        </div>
+        <div class="tl-polaroid">
+          <div class="tl-polaroid-photo">
+            <img src="images/first-arcade.png" alt="Hangout Pic 2">
+          </div>
+        </div>
+        <div class="tl-polaroid">
+          <div class="tl-polaroid-photo">
+            <img src="images/first-arcade3.png" alt="Hangout Pic 2">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Entry 12 -->
+  <div class="tl-item">
+    <div class="tl-content">
+      <span class="tl-date-tag">✦ Apr 11, 2023</span>
+      <h3 class="tl-title">First Photobooth Pic</h3>
+      <p class="tl-desc">The first time we took pictures together at the photobooth. It is the same day we went to the arcade.</p>
+      <p class="tl-tag">📸 We keep this love in a photograph. We made these memories for ourselves <br>- Photograph, Ed Sheeran</p>
+    </div>
+    <div class="tl-dot"><div class="tl-dot-circle"></div><span class="tl-dot-year">Apr</span></div>
+    <div class="tl-media"><div class="tl-polaroid"><div class="tl-polaroid-photo"><img src="images/first-photobooth.png" alt="Photobooth"></div><div class="tl-polaroid-caption">Photobooth</div></div></div>
+  </div>
+
+  <!-- Entry 13 -->
+  <div class="tl-item">
+    <div class="tl-content">
+      <span class="tl-date-tag">✦ Apr 11, 2023</span>
+      <h3 class="tl-title">First Coffee Date</h3>
+      <p class="tl-desc">After our first arcade date, we went for a coffee and had a great talk about a lot of things. I remember na nilibre mo pa ako that time ng coffee sa Starbucks.</p>
+      <p class="tl-tag">☕ "You're the coffee that I need in the morning" <br>- Best Part, Daniel Caesar ft. H.E.R.</p>
+    </div>
+    <div class="tl-dot"><div class="tl-dot-circle"></div><span class="tl-dot-year">Apr</span></div>
+    <div class="tl-media"><div class="tl-polaroid"><div class="tl-polaroid-photo"><img src="images/first-coffee.png" alt="Coffee date"></div><div class="tl-polaroid-caption">Coffee date</div></div></div>
+  </div>
+
+  <div class="tl-item">
+    <div class="tl-content">
+      <span class="tl-date-tag">✦ Apr 11, 2023</span>
+      <h3 class="tl-title">First Gift You Gave Me</h3>
+    </div>
+    <div class="tl-dot"><div class="tl-dot-circle"></div><span class="tl-dot-year">Apr</span></div>
+    <div class="tl-media"><div class="tl-polaroid"><div class="tl-polaroid-photo"><img src="images/first-gift.png" alt="First gift"></div><div class="tl-polaroid-caption">First gift</div></div></div>
+  </div>
+
+  <div class="tl-item tl-item-full">
+    <div class="tl-content">
+      <span class="tl-date-tag">✦ Apr 24, 2023</span>
+      <h3 class="tl-title">First Minecraft Date</h3>
+      <p class="tl-desc">We played Minecraft together for the first time and had a great time exploring the virtual world together.</p>
+    </div>
+    <div class="tl-dot"><div class="tl-dot-circle"></div><span class="tl-dot-year">Apr</span></div>
+    <div class="tl-media">
+      <div class="polaroid-group">
+        <div class="tl-polaroid">
+          <div class="tl-polaroid-photo">
+            <img src="images/first-mc2.png" alt="Hangout Pic 1">
+          </div>
+        </div>
+        <div class="tl-polaroid">
+          <div class="tl-polaroid-photo">
+            <img src="images/first-mc.png" alt="Hangout Pic 2">
+          </div>
+        </div>
+        <div class="tl-polaroid">
+          <div class="tl-polaroid-photo">
+            <img src="images/first-mc3.png" alt="Hangout Pic 2">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Entry 14 -->
+  <div class="tl-item tl-item-full">
+    <div class="tl-content">
+      <span class="tl-date-tag">✦ May 17, 2023</span>
+      <h3 class="tl-title">🎂 Her 18th Birthday 🎂</h3>
+      <p class="tl-desc">It's the first time I got to celebrate your birthday na magkasama tayo. I sang you a song and I get to give you my gifts and we even spent time sa house niyo to eat with your friends. I'm really happy that I get to be with you on to welcome your legality age.</p>
+    </div>
+    <div class="tl-dot"><div class="tl-dot-circle"></div><span class="tl-dot-year">May</span></div>
+    <div class="tl-media">
+      <div class="polaroid-group">
+        <div class="tl-polaroid">
+          <div class="tl-polaroid-photo">
+            <img src="images/18th-birthday.jpg" alt="Hangout Pic 1">
+          </div>
+        </div>
+        <div class="tl-polaroid">
+          <div class="tl-polaroid-photo">
+            <video src="images/18th-birthday3.mp4" autoplay loop muted playsinline preload="auto">
+            Your browser does not support the video tag.
+          </video>
+          </div>
+        </div>
+        <div class="tl-polaroid">
+          <div class="tl-polaroid-photo">
+            <img src="images/18th-birthday2.jpg" alt="Hangout Pic 3">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ─── Milestone: Relationship Era ─── -->
+  <div class="tl-milestone reveal">
+    <div class="tl-milestone-inner">
+      <span>✦</span> RELATIONSHIP ERA <span>✦</span>
+    </div>
+  </div>
+
+  <!-- Entry 15: START OF RELATIONSHIP -->
+  <div class="tl-item tl-item-full tl-item-highlight">
+    <div class="tl-content">
+      <span class="tl-date-tag" style="background:var(--wine);color:var(--cream);border-color:var(--wine-dark)">★ Jun 26, 2023</span>
+      <h3 class="tl-title"><b>Start of Our Relationship</b></h3>
+      <p class="tl-desc">The day you said yes. It was a little bit unexpected and out of nowhere. I really wanted to ask you personally pero hindi na rin makapigil ang heart ko to ask you that kahit sa chat.
+        Knowing na you are ready na rin, I shoot my shot and I'm glad that it went in. It became the start of our journey together as an official couple. (Bumawi naman ako by asking you the same personally)
+      </p>
+      <p class="tl-tag">❤️ "It's a love story, baby, just say, 'Yes'" <br>- Love Story, Taylor Swift</p>
+    </div>
+    <div class="tl-dot">
+      <div class="tl-dot-circle"></div>
+      <span class="tl-dot-year" style="color:var(--wine);font-weight:700">Official</span>
+    </div>
+    <div class="tl-media">
+      <div class="polaroid-group">
+        <div class="tl-polaroid">
+          <div class="tl-polaroid-photo">
+            <img src="images/first-day.png" alt="Hangout Pic 1">
+          </div>
+        </div>
+        <div class="tl-polaroid">
+          <div class="tl-polaroid-photo">
+            <img src="images/first-day2.png" alt="Hangout Pic 1">
+          </div>
+        </div>
+        <div class="tl-polaroid">
+          <div class="tl-polaroid-photo">
+            <img src="images/first-day3.png" alt="Hangout Pic 3">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Entry 16 -->
+  <div class="tl-item tl-item-full">
+    <div class="tl-content">
+      <span class="tl-date-tag">✦ Jul 19, 2023</span>
+      <h3 class="tl-title">SHS Graduation</h3>
+      <p class="tl-desc">Our first graduation as a couple. Finally, tapos na rin ang high school jouney natin. Hind mo man ako nakasama sa buong high school years mo, sisiguraduhin kong ako ang makakasama
+        mo sa magiging college life natin. I'm really proud of you and I'm really happy that I get to be with you on your graduation day. Plus we both received awards kaya I know na mas enjoyable at memorable siya sa'tin
+      </p>
+      <p class="tl-tag">🎓 EAC SHS Batch 2023</p>
+    </div>
+    <div class="tl-dot"><div class="tl-dot-circle"></div><span class="tl-dot-year">Jul</span></div>
+    <div class="tl-media">
+      <div class="polaroid-group">
+        <div class="tl-polaroid">
+          <div class="tl-polaroid-photo">
+            <img src="images/shs-grad.png" alt="Hangout Pic 1">
+          </div>
+        </div>
+        <div class="tl-polaroid">
+          <div class="tl-polaroid-photo">
+            <img src="images/shs-grad4.png" alt="Hangout Pic 1">
+          </div>
+        </div>
+        <div class="tl-polaroid">
+          <div class="tl-polaroid-photo">
+            <img src="images/shs-grad3.png" alt="Hangout Pic 3">
+          </div>
+        </div>
+        <div class="tl-polaroid">
+          <div class="tl-polaroid-photo">
+            <img src="images/shs-grad2.png" alt="Hangout Pic 1">
+          </div>
+        </div>
+        <div class="tl-polaroid">
+          <div class="tl-polaroid-photo">
+            <img src="images/shs-grad6.png" alt="Hangout Pic 1">
+          </div>
+        </div>
+        <div class="tl-polaroid">
+          <div class="tl-polaroid-photo">
+            <img src="images/shs-grad5.png" alt="Hangout Pic 3">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Entry 18 -->
+  <div class="tl-item">
+    <div class="tl-content">
+      <span class="tl-date-tag">✦ Jul 20, 2023</span>
+      <h3 class="tl-title">First Kiss on the Lips</h3>
+      <p class="tl-desc">Few days after our SHS graduation, we celebrated it by going to Robinson to bond. I remember na nasa karaoke tayo ng isang arcade doon and like I said, 
+        I asked you to be your boyfriend personally. You looked so happy and it's so fucking good to hear you said yes to me. After that, I asked if I can kiss you on your lips since we're officially together na and you 
+        said yes. Grabe, sobrang kilig ko that time and I felt like I'm on heaven.
+      </p>
+      <p class="tl-tag">💋 "Dahan-dahan mong hawakan ang aking kamay at dahan-dahan mong hagkan ang aking mga labi."</p>
+    </div>
+    <div class="tl-dot"><div class="tl-dot-circle"></div><span class="tl-dot-year">Jul</span></div>
+    <div class="tl-media"><div class="tl-polaroid"><div class="tl-polaroid-photo"><img src="images/first-kiss-lips.png" alt="First Kiss"></div><div class="tl-polaroid-caption">First Kiss</div></div></div>
+  </div>
+
+  <!-- Entry 19 -->
+  <div class="tl-item">
+    <div class="tl-content">
+      <span class="tl-date-tag">✦ Jul 23, 2023</span>
+      <h3 class="tl-title">First TikTok Dance</h3>
+      <p class="tl-desc">The first time we danced to a TikTok trend together. Mukha pang tanga boyfriend eh, palong-palo sumayaw.</p>
+    </div>
+    <div class="tl-dot"><div class="tl-dot-circle"></div><span class="tl-dot-year">Jul</span></div>
+    <div class="tl-media"><div class="tl-polaroid"><div class="tl-polaroid-photo"><video src="images/tiktok-dance.mp4" autoplay loop muted playsinline preload="auto">
+            Your browser does not support the video tag.
+          </video></div><div class="tl-polaroid-caption">TikTok</div></div></div>
+  </div>
+
+  <!-- Entry 20 -->
+  <div class="tl-item tl-item-full tl-item-highlight">
+    <div class="tl-content">
+      <span class="tl-date-tag" style="background:var(--wine);color:var(--cream);border-color:var(--wine-dark)">★ Jul 26, 2023</span>
+      <h3 class="tl-title"><b>First Monthsary</b></h3>
+      <p class="tl-desc">One month of officially being yours. The first of many months to come sa'tin. We celebrated it sa Timezone and we had a great time playing games and singing songs sa karaoke.</p>
+      <p class="tl-tag">🗓️ Happy 1st Month</p>
+    </div>
+    <div class="tl-dot">
+      <div class="tl-dot-circle"></div>
+      <span class="tl-dot-year" style="color:var(--wine);font-weight:700">Jul</span>
+    </div>
+    <div class="tl-media">
+      <div class="polaroid-group">
+        <div class="tl-polaroid">
+          <div class="tl-polaroid-photo">
+            <img src="images/first-monthsary.png" alt="Hangout Pic 1">
+            <div class="tl-polaroid-caption">My gifts for you!</div>
+          </div>
+        </div>
+        <div class="tl-polaroid">
+          <div class="tl-polaroid-photo">
+            <img src="images/first-monthsary2.png" alt="Hangout Pic 2">
+            <div class="tl-polaroid-caption">Our photobooth picture!</div>
+          </div>
+        </div>
+        <div class="tl-polaroid">
+          <div class="tl-polaroid-photo">
+            <img src="images/first-monthsary3.png" alt="Hangout Pic 3">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="tl-item tl-item-full">
+    <div class="tl-content">
+      <span class="tl-date-tag">✦ Jul 28, 2023</span>
+      <h3 class="tl-title">First Makeout</h3>
+      <p class="tl-desc">We did it at Timezone during our first monthsary celebration. I'm expecting we're going to make out but I'm not expecting to do it the first time at a public place. I enjoyed doing it with you though. Next time ulit hehe.</p>
+    </div>
+    <div class="tl-dot"><div class="tl-dot-circle"></div><span class="tl-dot-year">Jul</span></div>
+  </div>
+
+  <!-- Entry 21 -->
+  <div class="tl-item tl-item-full">
+    <div class="tl-content">
+      <span class="tl-date-tag">✦ Jul 31, 2023</span>
+      <h3 class="tl-title">Family Introduction (My Side)</h3>
+      <p class="tl-desc">The day I introduced you to my family. Although the timing is not really ideal since it's my Lola's funeral, I still love the thought na inintroduce kita sa family ko and sa lola ko kahit sa huling hantungan niya. You're finally part
+        of my family.
+      </p>
+    </div>
+    <div class="tl-dot"><div class="tl-dot-circle"></div><span class="tl-dot-year">Jul</span></div>
+    <div class="tl-media">
+      <div class="polaroid-group">
+        <div class="tl-polaroid">
+          <div class="tl-polaroid-photo">
+            <img src="images/fam-intro-ken.png" alt="Hangout Pic 1">
+            <div class="tl-polaroid-caption">Us in front of my Lola</div>
+          </div>
+        </div>
+        <div class="tl-polaroid">
+          <div class="tl-polaroid-photo">
+            <img src="images/fam-intro-ken2.png" alt="Hangout Pic 2">
+            <div class="tl-polaroid-caption">Us before we went to the funeral</div>
+          </div>
+        </div>
+        <div class="tl-polaroid">
+          <div class="tl-polaroid-photo">
+            <img src="images/fam-intro-ken3.png" alt="Hangout Pic 3">
+            <div class="tl-polaroid-caption">Us at the funeral</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Entry 22 -->
+  <div class="tl-item tl-item-full">
+    <div class="tl-content">
+      <span class="tl-date-tag">✦ Aug 19, 2023</span>
+      <h3 class="tl-title">Start of College Journey</h3>
+      <p class="tl-desc">It's the first day of our college journey together. Sa EAC-Cavite pa tayo nag-aaral niyan. You took nursing while I took computer science as our degree. I'm looking forward to this adventure with you.</p>
+    </div>
+    <div class="tl-dot"><div class="tl-dot-circle"></div><span class="tl-dot-year">Aug</span></div>
+    <div class="tl-media">
+      <div class="polaroid-group">
+        <div class="tl-polaroid">
+          <div class="tl-polaroid-photo">
+            <img src="images/first-day-school2.png" alt="Hangout Pic 1">
+            <div class="tl-polaroid-caption">First time we bonded as college students</div>
+          </div>
+        </div>
+        <div class="tl-polaroid">
+          <div class="tl-polaroid-photo">
+            <video src="images/first-day-school.mp4" autoplay loop muted playsinline preload="auto">
+            Your browser does not support the video tag.
+          </video>
+            <div class="tl-polaroid-caption">We ate together at McDonald's after your class</div>
+          </div>
+        </div>
+        <div class="tl-polaroid">
+          <div class="tl-polaroid-photo">
+            <img src="images/first-day-school3.png" alt="Hangout Pic 3">
+            <div class="tl-polaroid-caption">Sleep well bebs</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Entry 23 -->
+  <div class="tl-item tl-item-full">
+    <div class="tl-content">
+      <span class="tl-date-tag">✦ Oct 4, 2023</span>
+      <h3 class="tl-title">Sing Along</h3>
+      <p class="tl-desc">First time we sang a song together while playing an instrument. One of the song we sang is "Can't Help Falling in Love".</p>
+      <p class="tl-tag">🎤 "Take my hand. Take my whole life, too. For I can't help falling in love with you" <br>- Can't Help Falling in Love, Elvis Presley</p>
+    </div>
+    <div class="tl-dot"><div class="tl-dot-circle"></div><span class="tl-dot-year">Oct</span></div>
+  </div>
+
+  <!-- Entry 24 -->
+  <div class="tl-item tl-item-full tl-item-highlight">
+    <div class="tl-content">
+      <span class="tl-date-tag">✦ Oct 4, 2023</span>
+      <h3 class="tl-title"><b>100th Day!</b></h3>
+    </div>
+    <div class="tl-dot"><div class="tl-dot-circle"></div><span class="tl-dot-year">Oct</span></div>
+  </div>
+
+  <!-- Entry 25 -->
+   <div class="tl-item">
+    <div class="tl-content">
+      <span class="tl-date-tag">✦ Nov 4, 2023</span>
+      <h3 class="tl-title">First Book I Gave Her</h3>
+      <p class="tl-desc">The first time I gave her a book. I know you love books kaya I gave you one. The book is all about self-care and gentle reminders about life. 
+        I gave you that book to remind you that you are loved and cared despite this misery world we live in.</p>
+    </div>
+    <div class="tl-dot">
+      <div class="tl-dot-circle"></div>
+      <span class="tl-dot-year">Nov</span>
+    </div>
+    <div class="tl-media">
+        <div class="tl-polaroid">
+          <div class="tl-polaroid-photo"><video src="images/first-book.mp4" autoplay loop muted playsinline preload="auto">
+            Your browser does not support the video tag.
+          </video></div>
+        </div>
+    </div>
+    
+  </div>
+  <div class="tl-item tl-item-full">
+    <div class="tl-content">
+      <span class="tl-date-tag">✦ Nov 30, 2023</span>
+      <h3 class="tl-title">First Cooking Together</h3>
+      <p class="tl-desc">The first time we cooked together. remember we cooked Adobo while you guys doing your props for your Nursing Intramurals. I can't wait to create delicious meals together in the future hehe.</p>
+    </div>
+    
+    <div class="tl-dot">
+      <div class="tl-dot-circle"></div>
+      <span class="tl-dot-year">Nov</span>
+    </div>
+    
+    <div class="tl-media">
+      <div class="polaroid-group">
+        <div class="tl-polaroid">
+          <div class="tl-polaroid-photo"><img src="images/first-cooking2.PNG" alt="Hangout"></div>
+        </div>
+        <div class="tl-polaroid">
+          <div class="tl-polaroid-photo"><video src="images/first-cooking.mp4" autoplay loop muted playsinline preload="auto">
+            Your browser does not support the video tag.
+          </video></div>
+        </div>
+        <div class="tl-polaroid">
+          <div class="tl-polaroid-photo"><img src="images/first-cooking4.PNG" alt="Hangout"></div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+  <!-- Entry 26 -->
+  <div class="tl-item tl-item-full">
+    <div class="tl-content">
+      <span class="tl-date-tag">✦ Dec 25, 2023</span>
+      <h3 class="tl-title">First Christmas Together</h3>
+      <p class="tl-desc">The first Christmas we spent together. Though we're not together physically, it's still good enough to know that you are there with me this Christmas.</p>
+    </div>
+    <div class="tl-dot"><div class="tl-dot-circle"></div><span class="tl-dot-year">Dec</span></div>
+    <div class="tl-media">
+      <div class="polaroid-group">
+        <div class="tl-polaroid">
+          <div class="tl-polaroid-photo"><img src="images/first-christmas.png" alt="Hangout"></div>
+          <div class="tl-polaroid-caption">Year-End Party with our Friends before Christmas</div>
+        </div>
+        <div class="tl-polaroid">
+          <div class="tl-polaroid-photo"><img src="images/first-christmas2.png" alt="Hangout"></div>
+          <div class="tl-polaroid-caption">Year-End Party with our Friends before Christmas</div>
+        </div>
+        <div class="tl-polaroid">
+          <div class="tl-polaroid-photo"><img src="images/first-christmas3.png" alt="Hangout"></div>
+          <div class="tl-polaroid-caption">Year-End Party with our Friends before Christmas</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Entry 27 -->
+  <div class="tl-item tl-item-full">
+    <div class="tl-content">
+      <span class="tl-date-tag">✦ Dec 31, 2023</span>
+      <h3 class="tl-title">First New Year Together</h3>
+      <p class="tl-desc">The first New Year we spent together. Like in Christmas, we're not together physically but I'm glad that I'll end the year with you. Hoping to many more years full of adventures and memories.</p>
+      <p class="tl-tag">🎆 Hello 2024</p>
+    </div>
+    <div class="tl-dot"><div class="tl-dot-circle"></div><span class="tl-dot-year">Dec</span></div>
+    <div class="tl-media">
+      <div class="polaroid-group">
+        <div class="tl-polaroid">
+          <div class="tl-polaroid-photo"><img src="images/first-new-year.png" alt="Hangout"></div>
+          <div class="tl-polaroid-caption">Taken in January 3. 3 days after New Year.</div>
+        </div>
+        <div class="tl-polaroid">
+          <div class="tl-polaroid-photo"><img src="images/first-new-year2.png" alt="Hangout"></div>
+          <div class="tl-polaroid-caption">Taken in January 3. 3 days after New Year.</div>
+        </div>
+        <div class="tl-polaroid">
+          <div class="tl-polaroid-photo"><img src="images/first-new-year3.png" alt="Hangout"></div>
+          <div class="tl-polaroid-caption">Taken in January 3. 3 days after New Year.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="tl-year-marker reveal">
+    <span>2 0 2 4</span>
+  </div>
+  <!-- Entry 29 -->
+  <div class="tl-item tl-item-full">
+    
+    <div class="tl-content with-side-photos">
+      
+      <div class="tl-polaroid mini-polaroid left-photo">
+        <div class="tl-polaroid-photo"><img src="images/first-val-gift.png" alt="Left Pic"></div>
+        <div class="tl-polaroid-caption">My gift for you</div>
+      </div>
+
+      <div class="tl-text-inner">
+        <span class="tl-date-tag">✦ Feb 14, 2024</span>
+        <h3 class="tl-title">First Valentine's Day</h3>
+        <p class="tl-desc">Our first valentine's day as a couple and we had a blast. I had fun eating with you (and eating you) and playing at the arcade together! I look forward for more valentine's day with you.</p>
+      </div>
+
+      <div class="tl-polaroid mini-polaroid right-photo">
+        <div class="tl-polaroid-photo"><img src="images/first-val-gift2.png" alt="Right Pic"></div>
+        <div class="tl-polaroid-caption">Your gift to me</div>
+      </div>
+
+    </div>
+    
+    <div class="tl-dot">
+      <div class="tl-dot-circle"></div>
+      <span class="tl-dot-year">Feb</span>
+    </div>
+    
+    <div class="tl-media">
+      <div class="polaroid-group">
+        <div class="tl-polaroid">
+          <div class="tl-polaroid-photo"><img src="images/first-valentine.png" alt="Selfie"></div>
+          <div class="tl-polaroid-caption">Us in school that day.</div>
+        </div>
+        <div class="tl-polaroid">
+          <div class="tl-polaroid-photo"><img src="images/first-valentine2.png" alt="The view"></div>
+          <div class="tl-polaroid-caption">Our photobooth picture</div>
+        </div>
+        <div class="tl-polaroid">
+          <div class="tl-polaroid-photo"><img src="images/first-valentine3.png" alt="Coffee"></div>
+          <div class="tl-polaroid-caption">Us in school that day.</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Entry 30 -->
+  <div class="tl-item tl-item-full">
+    <div class="tl-content">
+      <span class="tl-date-tag">✦ Feb 26, 2024</span>
+      <h3 class="tl-title">First Manila Trip</h3>
+      <p class="tl-desc">The first time we visited Manila together. It's our 20th monthsary and we celebrated it sa SM Mall of Asia. We had fun playing at the arcade and riding the Ferris wheel. It's also the farthest trip we had and I look forward for more Manila trips or more farther trips with you! Nakakapagod man ang biyahe pero ikaw naman ang pahinga sa'king tabi ^^</p>
+    </div>
+    <div class="tl-dot"><div class="tl-dot-circle"></div><span class="tl-dot-year">Feb</span></div>
+    <div class="tl-media">
+      <div class="polaroid-group">
+        <div class="tl-polaroid">
+          <div class="tl-polaroid-photo"><img src="images/first-manila.png" alt="Selfie"></div>
+        </div>
+        <div class="tl-polaroid">
+          <div class="tl-polaroid-photo"> <video src="images/first-manila3.mp4" autoplay loop muted playsinline preload="auto">
+            Your browser does not support the video tag.
+          </video></div>
+          <div class="tl-polaroid-caption">Our ferris wheel ride</div>
+        </div>
+        <div class="tl-polaroid">
+          <div class="tl-polaroid-photo"><img src="images/first-manila2.png" alt="The view"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Entry 31 -->
+  <div class="tl-item tl-item-full tl-item-highlight">
+    <div class="tl-content">
+      <span class="tl-date-tag">✦ Mar 2, 2024</span>
+      <h3 class="tl-title"><b>250th Day!</b></h3>
+    </div>
+    <div class="tl-dot"><div class="tl-dot-circle"></div><span class="tl-dot-year">Mar</span></div>
+  </div>
+
+  <!-- Entry 32 -->
+  <div class="tl-item tl-item-full">
+    <div class="tl-content">
+      <span class="tl-date-tag">✦ Mar 4, 2024</span>
+      <h3 class="tl-title">First Swimming Together</h3>
+      <p class="tl-desc">The first time we had swimming together. I remember that time na we're practicing for our swimming class sa PE. I'm really not a good swimmer kaya buti mahal mo pa rin ako kahit ganoon hehe.</p>
+      <p class="tl-tag">"Hindi ako marunong lumangoy kaya siguro nalulunod ako sa'yo"</p>
+    </div>
+    <div class="tl-dot"><div class="tl-dot-circle"></div><span class="tl-dot-year">Mar</span></div>
+    <div class="tl-media">
+      <div class="polaroid-group">
+        <div class="tl-polaroid">
+          <div class="tl-polaroid-photo"><img src="images/first-swim.png" alt="Selfie"></div>
+          <div class="tl-polaroid-caption">Us in school that day.</div>
+        </div>
+        <div class="tl-polaroid">
+          <div class="tl-polaroid-photo"><img src="images/first-swim2.png" alt="The view"></div>
+          <div class="tl-polaroid-caption">Our photobooth picture</div>
+        </div>
+        <div class="tl-polaroid">
+          <div class="tl-polaroid-photo"><img src="images/first-swim3.png" alt="Coffee"></div>
+          <div class="tl-polaroid-caption">Us in school that day.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="tl-item">
+    <div class="tl-content">
+      <span class="tl-date-tag">✦ Mar 6, 2024</span>
+      <h3 class="tl-title">First Console Gaming Date</h3>
+      <p class="tl-desc">First time we played console games together (in PlayStation). Palong-palo tayo maglaro sa PlayStation eh. Nagpapanic sa cooking game na ang bilis maubos ng time tapos dinurog pa kita 
+        sa NBA 2K but we had fun even though you are kinda not a fan of playing video games.</p>
+      <p class="tl-tag">"You'll always be my Player 2 to my Player 1"</p>
+    </div>
+    <div class="tl-dot"><div class="tl-dot-circle"></div><span class="tl-dot-year">Mar</span></div>
+    <div class="tl-media"><div class="tl-polaroid"><div class="tl-polaroid-photo"><video src="images/first-console.mp4" autoplay loop muted playsinline preload="auto">
+            Your browser does not support the video tag.
+          </video></div><div class="tl-polaroid-caption">Us playing PlayStation</div></div></div>
+  </div>
+  <!-- Entry 33 -->
+  <div class="tl-item tl-item-full">
+    <div class="tl-content">
+      <span class="tl-date-tag">✦ Mar 20, 2024</span>
+      <h3 class="tl-title">Intramuros & Museum Date</h3>
+      <p class="tl-desc">The first time we went sa center ng Manila. The art were gorgeous there but looking at you enjoying yourself there feels like I'm looking in a much beautiful art. 
+        After exploring National Museum, we went to Intramuros to explore Fort Santiago. It was pretty tiring but we saw a lot of history in that place pati yung amoy ng Pasig River, ancient na rin</p>
+      <p class="tl-tag">'Di ko maiwasang pagmasdan ang 'yong larawan kahit 'di mo mamalayan, ikaw lang ang gustong tignan <br>- Museo, Eliza Maturan</p>
+    </div>
+    <div class="tl-dot"><div class="tl-dot-circle"></div><span class="tl-dot-year">Mar</span></div>
+    <div class="tl-media">
+      <div class="polaroid-group">
+        <div class="tl-polaroid">
+          <div class="tl-polaroid-photo"><img src="images/first-intra.png"></div>
+        </div>
+        <div class="tl-polaroid">
+          <div class="tl-polaroid-photo"><img src="images/first-intra2.png"></div>
+        </div>
+        <div class="tl-polaroid">
+          <div class="tl-polaroid-photo"><img src="images/first-intra3.png"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Entry 34 -->
+  <div class="tl-item tl-item-full">
+    <div class="tl-content">
+      <span class="tl-date-tag">✦ Mar 22, 2024</span>
+      <h3 class="tl-title">First Fun Run</h3>
+      <p class="tl-desc">The first fun run we had as a couple. Akala ko mapapagod ako nang husto pero nung nakita kong kasabay kita tumakbo, mas lalo akong napagod charot. Syempre sobrang gaan ng pakiramdam ko kasi kasama kita. 
+        Hiningal ako pero keri lang, basta ikaw ang kasabay ko hanggang finish line. Sana makasabay din kita hanggang sa finish line ng buhay natin.</p>
+    </div>
+    <div class="tl-dot"><div class="tl-dot-circle"></div><span class="tl-dot-year">Mar</span></div>
+    <div class="tl-media">
+      <div class="polaroid-group">
+        <div class="tl-polaroid">
+          <div class="tl-polaroid-photo"><img src="images/first-fun-run.png"></div>
+        </div>
+        <div class="tl-polaroid">
+          <div class="tl-polaroid-photo"><img src="images/first-fun-run2.png"></div>
+        </div>
+        <div class="tl-polaroid">
+          <div class="tl-polaroid-photo"><img src="images/first-fun-run3.png"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="tl-item tl-item-full">
+    <div class="tl-content">
+      <span class="tl-date-tag">✦ Apr 29, 2024</span>
+      <h3 class="tl-title">First LEGO Built</h3>
+      <p class="tl-desc">Our first time building a LEGO together. We built Mini Mickey Mouse and Mini Minnie Mouse. Pagtapos natin magreklamo at mainis sa pagbuo nito, we finally finished it. 
+        They are really cute and we took pictures with them at photo booth in Timezone</p>
+    </div>
+    <div class="tl-dot"><div class="tl-dot-circle"></div><span class="tl-dot-year">Apr</span></div>
+    <div class="tl-media">
+      <div class="polaroid-group">
+        <div class="tl-polaroid">
+          <div class="tl-polaroid-photo"><img src="images/first-lego.png"></div>
+        </div>
+        <div class="tl-polaroid">
+          <div class="tl-polaroid-photo"><video src="images/first-lego2.mp4" autoplay loop muted playsinline preload="auto">
+            Your browser does not support the video tag.
+          </video></div>
+        </div>
+        <div class="tl-polaroid">
+          <div class="tl-polaroid-photo"><img src="images/first-lego3.png"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Entry 35 -->
+  <div class="tl-item tl-item-full">
+    <div class="tl-content">
+      <span class="tl-date-tag">✦ May 17, 2024</span>
+      <h3 class="tl-title">Her 19th Birthday</h3>
+      <p class="tl-desc">We celebrated your 19th birthday. Naglayas ka pa ng mga time na 'to kaya hindi talaga siyang malilimutang experience. Pero despite of the hardships na pinagdadaanan mo during these times,
+        I'm glad na kahit papaano nakita kitang having fun with me and our friends. I'm looking forward to celebrate more birthdays with you in the future!
+      </p>
+    </div>
+    <div class="tl-dot"><div class="tl-dot-circle"></div><span class="tl-dot-year">May</span></div>
+      <div class="tl-media">
+        <div class="polaroid-group">
+          <div class="tl-polaroid">
+            <div class="tl-polaroid-photo"><img src="images/19th-bday4.png"></div>
+          </div>
+          <div class="tl-polaroid">
+            <div class="tl-polaroid-photo"><img src="images/19th-bday2.png"></div>
+          </div>
+          <div class="tl-polaroid">
+            <div class="tl-polaroid-photo"><img src="images/19th-bday.png"></div>
+          </div>
+        </div>
+      </div>
+  </div>
+
+  <!-- Entry 36: 1st ANNIVERSARY -->
+  <div class="tl-item tl-item-highlight">
+    <div class="tl-content">
+      <span class="tl-date-tag" style="background:var(--wine);color:var(--cream);border-color:var(--wine-dark)">★ Jun 26, 2024</span>
+      <h3 class="tl-title">First Anniversary</h3>
+      <p class="tl-desc">Gulat ka nag-iiscroll ka lang dito tapos isang taon na agad tayo? Ang dami na nating napagdaanan in just 365 days, pero look at us now, celebrating our 1st anniversary. 
+        Sobrang daming tawanan, random food dates, memories, and despite of the hardships we've faced and you're facing that time, I'm glad na you still chose to be with me. I hope this is just the
+        first out of many anniversaries to come.</p>
+      <p class="tl-tag">🎉 One year down, more to go.</p>
+    </div>
+    <div class="tl-dot">
+      <div class="tl-dot-circle" style="background:var(--wine);border-color:var(--wine-dark);transform:scale(1.4)"></div>
+      <span class="tl-dot-year" style="color:var(--wine);font-weight:700">1 Year</span>
+    </div>
+    <div class="tl-media"><div class="tl-polaroid"><div class="tl-polaroid-photo"><video src="images/first-anniv.mp4" loop playsinline preload="metadata">
+            Your browser does not support the video tag.
+          </video></div><div class="tl-polaroid-caption">First Anniversary Compilation</div></div></div>
+  </div>
+
+  <!-- Entry 37 -->
+  <div class="tl-item tl-item-full">
+    <div class="tl-content">
+      <span class="tl-date-tag">✦ Jun 26, 2024</span>
+      <h3 class="tl-title">First Staycation</h3>
+      <p class="tl-desc">Our first staycation as we celebrate our first anniversary. We stayed pa sa isang staycation room sa may Imus. We had a lot of fun singing, watching movies, playing some games, and "sleeping" hehe.</p>
+    </div>
+    <div class="tl-dot"><div class="tl-dot-circle"></div><span class="tl-dot-year">Jun</span></div>
+    <div class="tl-media">
+        <div class="polaroid-group">
+          <div class="tl-polaroid">
+            <div class="tl-polaroid-photo"><video src="images/first-staycation.mp4" autoplay loop muted playsinline preload="auto">
+            Your browser does not support the video tag.
+          </video></div>
+          </div>
+          <div class="tl-polaroid">
+            <div class="tl-polaroid-photo"><img src="images/first-staycation2.png"></div>
+          </div>
+          <div class="tl-polaroid">
+            <div class="tl-polaroid-photo"><video src="images/first-staycation3.mp4" autoplay loop muted playsinline preload="auto">
+            Your browser does not support the video tag.
+          </video></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Entry 38 -->
+  <div class="tl-item tl-item-full">
+    <div class="tl-content">
+      <span class="tl-date-tag">✦ Jun 30, 2024</span>
+      <h3 class="tl-title">Family Introduction (Her Side)</h3>
+      <p class="tl-desc">After ng paglayas mo, you finally came back sa house niyo and you formally introduce me. I thought this will be the end of it but it gave us another chance to a new look
+         sa relationship natin. I'm really nervous that time but I kept my composure to make sure na I won't embarrass you in front of your family. I'm glad they let us continue this relationship despite of what happened.
+         I know they won't accept me that yet but we'll work on it.
+      </p>
+    </div>
+    <div class="tl-dot"><div class="tl-dot-circle"></div><span class="tl-dot-year">Jun</span></div>
+  </div>
+
+  <!-- Entry 39 -->
+  <div class="tl-item tl-item-full">
+    <div class="tl-content">
+      <span class="tl-date-tag">✦ Jul 2024</span>
+      <h3 class="tl-title">First Family Dinner (Her Side)</h3>
+      <p class="tl-desc">Since I'm coming to your house and staying late, there are times that I'll eat with your family. It's just a fantasy before but it became a reality.</p>
+    </div>
+    <div class="tl-dot"><div class="tl-dot-circle"></div><span class="tl-dot-year">Jul</span></div>
+  </div>
+
+  <!-- Entry 40 -->
+  <div class="tl-item tl-item-full">
+    <div class="tl-content">
+      <span class="tl-date-tag">✦ Jul 26, 2024</span>
+      <h3 class="tl-title">First Painting Date</h3>
+      <p class="tl-desc">It's our first monthsary na we'll get to spend bilang legal sa side mo and to celebrate, I bought some painting canvas sa TikTok and I thought na we could try it for new experience hehe.
+        You gave my life colors that way you gave colors to that canvas hehe.
+      </p>
+      <p class="tl-tag">"And you decorated my life, by painting your love all over my heart"<br>- You Decorated My Life, Kenny Rogers</p>
+    </div>
+    <div class="tl-dot"><div class="tl-dot-circle"></div><span class="tl-dot-year">Jul</span></div>
+      <div class="tl-media">
+        <div class="polaroid-group">
+          <div class="tl-polaroid">
+            <div class="tl-polaroid-photo"><img src="images/first-paint.png"></div>
+          </div>
+          <div class="tl-polaroid">
+            <div class="tl-polaroid-photo"><img src="images/first-paint2.png"></div>
+          </div>
+          <div class="tl-polaroid">
+            <div class="tl-polaroid-photo"><img src="images/first-paint3.png"></div>
+          </div>
+        </div>
+      </div>
+  </div>
+
+  <!-- Entry 41 -->
+  <div class="tl-item">
+    <div class="tl-content">
+      <span class="tl-date-tag">✦ Aug 2, 2024</span>
+      <h3 class="tl-title">My 20th Birthday</h3>
+      <p class="tl-desc">I celebrated my 20th birthday sa house niyo. I remember your mother gave me a cake and cooked my favorite food yey (siomai) but what made it much special
+        is that I'm able to bond with you whole day, just the two of us and I really had fun that day.
+      </p>
+    </div>
+    <div class="tl-dot"><div class="tl-dot-circle"></div><span class="tl-dot-year">Aug</span></div>
+    <div class="tl-media"><div class="tl-polaroid"><div class="tl-polaroid-photo"><img src="images/20th-bday.png" alt="My Bday"></div><div class="tl-polaroid-caption">Pinakamatinong picture natin that day</div></div></div>
+  </div>
+
+  <!-- Entry 42 -->
+  <div class="tl-item">
+    <div class="tl-content">
+      <span class="tl-date-tag">✦ Aug 2024</span>
+      <h3 class="tl-title">Her New School Journey</h3>
+      <p class="tl-desc">Since you left EAC-Cavite dahil sa past circumstances mo, you decided to continue your passion sa Kolehiyo ng Lungsod ng Dasmariñas (KLD). You started again since balik 1st year ka ulit
+        but that's fine kasi hindi naman karera ang buhay. I'm really looking forward that time on your new experiences and the growth na you'll have in that school.
+      </p>
+      <p class="tl-tag">"Huwag mag-alala, buhay ay 'di karera"<br>- Karera, BINI</p>
+    </div>
+    <div class="tl-dot"><div class="tl-dot-circle"></div><span class="tl-dot-year">Aug</span></div>
+    <div class="tl-media"><div class="tl-polaroid"><div class="tl-polaroid-photo"><img src="images/new-school.png" alt="New school"></div><div class="tl-polaroid-caption">New school</div></div></div>
+  </div>
+
+  <!-- Entry 43 -->
+  <div class="tl-item tl-item-full">
+    <div class="tl-content">
+      <span class="tl-date-tag">✦ Sep 1, 2024</span>
+      <h3 class="tl-title">First Church Together</h3>
+      <p class="tl-desc">The first time we went to church together. Kahit na medyo tumitiwalag na ako, I still dream of that moment na magkasama tayong magsisimba. This became a reality when your mother
+        asked me if I can join you sa church niyo. I agreed and it was really memorable and fun.
+      </p>
+    </div>
+    <div class="tl-dot"><div class="tl-dot-circle"></div><span class="tl-dot-year">Sep</span></div>
+      <div class="tl-media">
+        <div class="polaroid-group">
+          <div class="tl-polaroid">
+            <div class="tl-polaroid-photo"><img src="images/first-church.png"></div>
+          </div>
+          <div class="tl-polaroid">
+            <div class="tl-polaroid-photo"><img src="images/first-church2.png""></div>
+          </div>
+          <div class="tl-polaroid">
+            <div class="tl-polaroid-photo"><img src="images/first-church3.png"></div>
+            <div class="tl-polaroid-caption">First picture with you family</div>
+          </div>
+        </div>
+      </div>
+  </div>
+
+  <!-- Entry 44 -->
+  <div class="tl-item tl-item-full">
+    <div class="tl-content">
+      <span class="tl-date-tag">✦ Oct 19, 2024</span>
+      <h3 class="tl-title">First Sleepover Together</h3>
+      <p class="tl-desc">The first time I spent the night at your house. It's actually all of a sudden since we're just trying to watch a movie called "Smile" and since it's too late, I just stayed to spend the night with you.
+        It was a dream come true since fantasy ko lang dati ang makasama kang matulog but now it became a reality. Pagkagising, we cooked breakfast and spend the morning together before I went home.
+      </p>
+    </div>
+    <div class="tl-dot"><div class="tl-dot-circle"></div><span class="tl-dot-year">Oct</span></div>
+      <div class="tl-media">
+        <div class="polaroid-group">
+          <div class="tl-polaroid">
+            <div class="tl-polaroid-photo"><img src="images/first-sleepover.png"></div>
+            <div class="tl-polaroid-caption">Look how young Clover is that day</div>
+          </div>
+          <div class="tl-polaroid">
+            <div class="tl-polaroid-photo"><img src="images/first-sleepover2.png"></div>
+            <div class="tl-polaroid-caption">Us brushing our teeth after waking up</div>
+          </div>
+          <div class="tl-polaroid">
+            <div class="tl-polaroid-photo"><img src="images/first-sleepover3.png"></div>
+          </div>
+        </div>
+      </div>
+  </div>
+
+  <!-- Entry 45 -->
+  <div class="tl-item tl-item-full">
+    <div class="tl-content">
+      <span class="tl-date-tag">✦ Nov 5, 2024</span>
+      <h3 class="tl-title">First Cemetery Visit</h3>
+      <p class="tl-desc">The first time we went to cemetery together. We visited my Nanay sa cemetery. We ate and talked about things together with my Nanay.</p>
+    </div>
+    <div class="tl-dot"><div class="tl-dot-circle"></div><span class="tl-dot-year">Nov</span></div>
+      <div class="tl-media">
+        <div class="polaroid-group">
+          <div class="tl-polaroid">
+            <div class="tl-polaroid-photo"><img src="images/first-cemetery2.png"></div>
+          </div>
+          <div class="tl-polaroid">
+            <div class="tl-polaroid-photo"><video src="images/first-cemetery.mp4" autoplay loop muted playsinline preload="auto">
+            Your browser does not support the video tag.
+          </video></div>
+          </div>
+          <div class="tl-polaroid">
+            <div class="tl-polaroid-photo"><img src="images/first-cemetery3.png"></div>
+          </div>
+        </div>
+      </div>
+  </div>
+
+  <!-- Entry 46 -->
+  <div class="tl-item tl-item-full tl-item-highlight">
+    <div class="tl-content">
+      <span class="tl-date-tag">✦ Nov 7, 2024</span>
+      <h3 class="tl-title"><b>500th Day!</b></h3>
+    </div>
+    <div class="tl-dot"><div class="tl-dot-circle"></div><span class="tl-dot-year">Nov</span></div>
+  </div>
+
+  <!-- Entry 47 -->
+  <div class="tl-item tl-item-full">
+    <div class="tl-content">
+      <span class="tl-date-tag">✦ Dec 2, 2024</span>
+      <h3 class="tl-title">First Family Dinner (My Side)</h3>
+      <p class="tl-desc">The first time we ate dinner together on my family's side. I remember we're celebrating yung pagkapasa ni ate sa board exam bilang isang Registered Nurse (RN). We went to
+        Alabang Town Center to eat a Ramen and we walked around the mall together, discovering things.
+      </p>
+    </div>
+    <div class="tl-dot"><div class="tl-dot-circle"></div><span class="tl-dot-year">Dec</span></div>
+     <div class="tl-media">
+        <div class="polaroid-group">
+          <div class="tl-polaroid">
+            <div class="tl-polaroid-photo"><img src="images/fam-myside.png"></div>
+          </div>
+          <div class="tl-polaroid">
+            <div class="tl-polaroid-photo"><img src="images/fam-myside2.png"></div>
+            <div class="tl-polaroid-caption">Our first picture with my family.</div>
+          </div>
+          <div class="tl-polaroid">
+            <div class="tl-polaroid-photo"><img src="images/fam-myside3.png"></div>
+          </div>
+        </div>
+      </div>
+  </div>
+  <div class="tl-item tl-item-full">
+    <div class="tl-content">
+      <span class="tl-date-tag">✦ Dec 2, 2024</span>
+      <h3 class="tl-title">First Fireworks Display</h3>
+      <p class="tl-desc">The first time we watched fireworks together. Habang naggagala tayo sa ATC, we suddenly hear and saw fireworks. We watched it together kahit na saglit lang siya and I remembered na
+        we never watched fireworks together before that time. I hope we can watch it again together nang mas mahaba pa
+      </p>
+    </div>
+    <div class="tl-dot"><div class="tl-dot-circle"></div><span class="tl-dot-year">Dec</span></div>
+  </div>
+
+  <!-- Entry 48 -->
+  <div class="tl-item">
+    <div class="tl-content">
+      <span class="tl-date-tag">✦ Dec 25, 2024</span>
+      <h3 class="tl-title">Second Christmas</h3>
+      <p class="tl-desc">This is the second Christmas we spent together as a couple. Just like last year, hindi na naman tayo magkasama physically pero I'm still really thankful na ikaw pa
+        rin ang kasama ko sa Pasko. I'm still dreaming na magkasama na tayong sasalubungin ang Pasko na magkasama tayo physically.
+      </p>
+    </div>
+    <div class="tl-dot"><div class="tl-dot-circle"></div><span class="tl-dot-year">Dec</span></div>
+    <div class="tl-media"><div class="tl-polaroid"><div class="tl-polaroid-photo"><img src="images/2nd-christmas.png" alt="Christmas"></div><div class="tl-polaroid-caption">This is us doing hand painting before Christmas</div></div></div>
+  </div>
+
+  <!-- Entry 49 -->
+  <div class="tl-item">
+    <div class="tl-content">
+      <span class="tl-date-tag">✦ Dec 31, 2024</span>
+      <h3 class="tl-title">Second New Year</h3>
+      <p class="tl-desc">This is the second New year we spent together. Just like last year, hindi na naman tayo magkasama physically pero thankful pa rin ako na ikaw nakasama ko sa buong 2024
+        kahit na marami tayong pinagdaanan this year. I hope soon we can welcome the New Year together physically habang nanonood ng mga fireworks and watching you jump para tumangkad hihi.
+      </p>
+    </div>
+    <div class="tl-dot"><div class="tl-dot-circle"></div><span class="tl-dot-year">Dec</span></div>
+    <div class="tl-media"><div class="tl-polaroid"><div class="tl-polaroid-photo"><img src="images/2nd-newyear.png" alt="New Year"></div><div class="tl-polaroid-caption">This is us 2 days before New Year</div></div></div>
+  </div>
+   <div class="tl-year-marker reveal">
+    <span>2 0 2 5</span>
+  </div>
+  <!-- Entry 50 -->
+  <div class="tl-item tl-item-full">
+    <div class="tl-content">
+      <span class="tl-date-tag">✦ Feb 14, 2025</span>
+      <h3 class="tl-title">Second Valentine's Day</h3>
+      <p class="tl-desc">The second time we celebrated Valentine's Day together as a couple.</p>
+    </div>
+    <div class="tl-dot"><div class="tl-dot-circle"></div><span class="tl-dot-year">2025</span></div>
+      <div class="tl-media">
+        <div class="polaroid-group">
+          <div class="tl-polaroid">
+            <div class="tl-polaroid-photo"><img src="images/2nd-valentines.png"></div>
+            <div class="tl-polaroid-caption">You holding the mini DIY paper bouquet that I made.</div>
+          </div>
+          <div class="tl-polaroid">
+            <div class="tl-polaroid-photo"><img src="images/2nd-valentines2.png"></div>
+            <div class="tl-polaroid-caption">Us eating sa 24 Chicken after Valentine's Day</div>
+          </div>
+          <div class="tl-polaroid">
+            <div class="tl-polaroid-photo"><img src="images/2nd-valentines3.png"></div>
+            <div class="tl-polaroid-caption">You holding the mini DIY paper bouquet that I made.</div>
+          </div>
+        </div>
+      </div>
+  </div>
+
+  <!-- Entry 51 -->
+  <div class="tl-item tl-item-full">
+    <div class="tl-content">
+      <span class="tl-date-tag">✦ May 12, 2025</span>
+      <h3 class="tl-title">First to Vote Together</h3>
+      <p class="tl-desc">The first time we voted for Election together. It is also the first time na bumoto tayo sa National Elections. Finally, having a voice para magluklok nang nararapat na tao.</p>
+    </div>
+    <div class="tl-dot"><div class="tl-dot-circle"></div><span class="tl-dot-year">May</span></div>
+      <div class="tl-media">
+        <div class="polaroid-group">
+          <div class="tl-polaroid">
+            <div class="tl-polaroid-photo"><img src="images/first-election.png"></div>
+          </div>
+          <div class="tl-polaroid">
+            <div class="tl-polaroid-photo"><img src="images/first-election2.png"></div>
+            <div class="tl-polaroid-caption">Palatandaang bumoto tayo</div>
+          </div>
+          <div class="tl-polaroid">
+            <div class="tl-polaroid-photo"><img src="images/first-election3.png"></div>
+          </div>
+        </div>
+      </div>
+  </div>
+
+  <!-- Entry 52 -->
+  <div class="tl-item tl-item-full">
+    <div class="tl-content">
+      <span class="tl-date-tag">✦ May 17, 2025</span>
+      <h3 class="tl-title">Her 20th Birthday</h3>
+      <p class="tl-desc">It's your 20th birthday and I'm glad you're turning 20 with me. Young adult ka na pero baby pa rin kita hehehe. We celebrated your birthday together with your family.</p>
+    </div>
+    <div class="tl-dot"><div class="tl-dot-circle"></div><span class="tl-dot-year">May</span></div>
+      <div class="tl-media">
+        <div class="polaroid-group">
+          <div class="tl-polaroid">
+            <div class="tl-polaroid-photo"><img src="images/20th-bday-jami.png"></div>
+          </div>
+          <div class="tl-polaroid">
+            <div class="tl-polaroid-photo"><img src="images/20th-bday-jami2.png"></div>
+            <div class="tl-polaroid-caption">The flowers I gave you for your birthday</div>
+          </div>
+          <div class="tl-polaroid">
+            <div class="tl-polaroid-photo"><img src="images/20th-bday-jami3.png"></div>
+          </div>
+        </div>
+      </div>
+  </div>
+
+  <!-- Entry 53 -->
+  <div class="tl-item">
+    <div class="tl-content">
+      <span class="tl-date-tag">✦ Jun 15, 2025</span>
+      <h3 class="tl-title">First Bicycle Together</h3>
+      <p class="tl-desc">The first time we rode our bikes together. I remember na dinala ko kasi yung bike ko sa inyo and may bike kayo so inaya kita na magbike tayo around sa village niyo. It was a wonderful experience na nasamahan
+        mo rin akong magbike.
+      </p>
+    </div>
+    <div class="tl-dot"><div class="tl-dot-circle"></div><span class="tl-dot-year">Jun</span></div>
+    <div class="tl-media"><div class="tl-polaroid"><div class="tl-polaroid-photo"><video src="images/first-bike.mp4" autoplay loop muted playsinline preload="auto">
+            Your browser does not support the video tag.
+          </video></div><div class="tl-polaroid-caption">Bicycle date</div></div></div>
+  </div>
+
+  <!-- Entry 54: 2nd ANNIVERSARY -->
+  <div class="tl-item tl-item-highlight">
+    <div class="tl-content">
+      <span class="tl-date-tag" style="background:var(--wine);color:var(--cream);border-color:var(--wine-dark)">★ Jun 26, 2025</span>
+      <h3 class="tl-title">Second Anniversary!</h3>
+      <p class="tl-desc">IT'S OUR SECOND ANNIVERSARY!!! After 2 fucking years, we're still together despite ng mga pinagdaanan natin together. Those shits just made us even stronger kaya
+        nakarating na tayo rito. It's also 1 year after mo ako nilegal sa parents mo kaya naman we decided to celebrate our anniversary sa house niyo. We cooked our food, we watched a movie together and we played some games.
+        We also had some deep talks about our relationship and our future din together.
+      </p>
+      <p class="tl-tag">"Be my only love" <br>- ONLY, Lee Hi</p>
+    </div>
+    <div class="tl-dot">
+      <div class="tl-dot-circle" style="background:var(--wine);border-color:var(--wine-dark);transform:scale(1.4)"></div>
+      <span class="tl-dot-year" style="color:var(--wine);font-weight:700">2 Years</span>
+    </div>
+    <div class="tl-media">
+      <div class="tl-polaroid" style="position:relative;border:2px solid var(--gold);">
+        <div class="tl-polaroid-photo"><video src="images/second-anniv.mp4" loop playsinline preload="metadata">
+            Your browser does not support the video tag.
+          </video></div>
+        <div class="tl-polaroid-caption" style="color:var(--wine);font-weight:700">Two years ♡</div>
+      </div>
+    </div>
+  </div>
+  <div class="tl-item tl-item-full tl-item-highlight">
+    <div class="tl-media">
+        <div class="polaroid-group">
+          <div class="tl-polaroid" style="position:relative;border:2px solid var(--gold);">
+            <div class="tl-polaroid-photo"><img src="images/second-anniv-pics.png"></div>
+            <div class="tl-polaroid-caption">The gifts I gave you</div>
+          </div>
+          <div class="tl-polaroid" style="position:relative;border:2px solid var(--gold);">
+            <div class="tl-polaroid-photo"><img src="images/second-anniv-pics2.png"></div>
+          </div>
+          <div class="tl-polaroid" style="position:relative;border:2px solid var(--gold);">
+            <div class="tl-polaroid-photo"><img src="images/second-anniv-pics3.png"></div>
+            <div class="tl-polaroid-caption">The foods that we prepared together</div>
+          </div>
+          <div class="tl-polaroid" style="position:relative;border:2px solid var(--gold);">
+            <div class="tl-polaroid-photo"><img src="images/second-anniv-pics4.png"></div>
+          </div>
+          <div class="tl-polaroid" style="position:relative;border:2px solid var(--gold);">
+            <div class="tl-polaroid-photo"><img src="images/second-anniv-pics5.png"></div>
+            <div class="tl-polaroid-caption">The flowers I made just for you</div>
+          </div>
+          <div class="tl-polaroid" style="position:relative;border:2px solid var(--gold);">
+            <div class="tl-polaroid-photo"><img src="images/second-anniv-pics6.png"></div>
+          </div>
+        </div>
+      </div>
+  </div>
+
+  <div class="tl-item tl-item-full tl-item-highlight">
+    <div class="tl-content">
+      <span class="tl-date-tag">✦ Jul 17, 2025</span>
+      <h3 class="tl-title"><b>750th Day!</b></h3>
+    </div>
+    <div class="tl-dot"><div class="tl-dot-circle"></div><span class="tl-dot-year">Jul</span></div>
+  </div>
+
+  <!-- Entry 56 -->
+  <div class="tl-item tl-item-full">
+    <div class="tl-content">
+      <span class="tl-date-tag">✦ Aug 2, 2025</span>
+      <h3 class="tl-title">My 21st Birthday</h3>
+      <p class="tl-desc">We celebrated my 21st birthday with Chris, Muriel, and Justine sa Vermosa. We ate sa Shakey's then play sa Timezone and overall, we had a great time.</p>
+    </div>
+    <div class="tl-dot"><div class="tl-dot-circle"></div><span class="tl-dot-year">Aug</span></div>
+      <div class="tl-media">
+        <div class="polaroid-group">
+          <div class="tl-polaroid">
+            <div class="tl-polaroid-photo"><img src="images/21st-bday-ken.png"></div>
+          </div>
+          <div class="tl-polaroid">
+            <div class="tl-polaroid-photo"><img src="images/21st-bday-ken2.png"></div>
+            <div class="tl-polaroid-caption">Us with our friends sa photobooth</div>
+          </div>
+          <div class="tl-polaroid">
+            <div class="tl-polaroid-photo"><img src="images/21st-bday-ken3.png"></div>
+          </div>
+        </div>
+      </div>
+  </div>
+
+  <!-- Entry 57 -->
+  <div class="tl-item tl-item-full">
+    <div class="tl-content">
+      <span class="tl-date-tag">✦ Aug 15, 2025</span>
+      <h3 class="tl-title">Her Capping & Pinning</h3>
+      <p class="tl-desc">It's the day of your cappi ng and pinning ceremony and the start of your journey as Student Nurse. Me and your family were there to watch it. I'm so proud seeing you
+        with your pin and cap on. Soon, RN ka na kaya padayon!!
+      </p>
+    </div>
+    <div class="tl-dot"><div class="tl-dot-circle"></div><span class="tl-dot-year">Aug</span></div>
+     <div class="tl-media">
+        <div class="polaroid-group">
+          <div class="tl-polaroid">
+            <div class="tl-polaroid-photo"><img src="images/capping.png"></div>
+          </div>
+          <div class="tl-polaroid">
+            <div class="tl-polaroid-photo"><video src="images/capping2.mp4" autoplay loop muted playsinline preload="auto">
+            Your browser does not support the video tag.
+          </video></div>
+            <div class="tl-polaroid-caption">The moment where Mayor Jenny puts the cap on.</div>
+          </div>
+          <div class="tl-polaroid">
+            <div class="tl-polaroid-photo"><img src="images/capping3.png"></div>
+          </div>
+        </div>
+      </div>
+  </div>
+
+  <!-- Entry 58 -->
+  <div class="tl-item tl-item-full">
+    <div class="tl-content">
+      <span class="tl-date-tag">✦ Aug 24, 2025</span>
+      <h3 class="tl-title">First Jogging Together</h3>
+      <p class="tl-desc">The first time we went jogging together. Napakabiglaan lang din nito since bigla lang nag-aya noon yung mother mo na magjogging tayo sa Vermosa kaya sinamantala na rin yung moment
+        para makapagjogging na rin tayo.
+      </p>
+    </div>
+    <div class="tl-dot"><div class="tl-dot-circle"></div><span class="tl-dot-year">Aug</span></div>
+    <div class="tl-media">
+        <div class="polaroid-group">
+          <div class="tl-polaroid">
+            <div class="tl-polaroid-photo"><img src="images/first-jog.png"></div>
+          </div>
+          <div class="tl-polaroid">
+            <div class="tl-polaroid-photo"><video src="images/first-jog2.mp4" autoplay loop muted playsinline preload="auto">
+            Your browser does not support the video tag.
+          </video></div>
+            <div class="tl-polaroid-caption">Us jogging sa Vermosa</div>
+          </div>
+          <div class="tl-polaroid">
+            <div class="tl-polaroid-photo"><img src="images/first-jog3.png"></div>
+          </div>
+        </div>
+      </div>
+  </div>
+
+  <!-- Entry 59 -->
+  <div class="tl-item tl-item-full">
+    <div class="tl-content">
+      <span class="tl-date-tag">✦ Dec 12, 2025</span>
+      <h3 class="tl-title">First Hotpot Together</h3>
+      <p class="tl-desc">Our first hotpot together. We ate hotpot sa SM City Dasmariñas and before that, nagphotobooth din tayo and naggala to enjoy ourselves din.</p>
+    </div>
+    <div class="tl-dot"><div class="tl-dot-circle"></div><span class="tl-dot-year">Dec</span></div>
+    <div class="tl-media">
+        <div class="polaroid-group">
+          <div class="tl-polaroid">
+            <div class="tl-polaroid-photo"><img src="images/first-hotpot.png"></div>
+          </div>
+          <div class="tl-polaroid">
+            <div class="tl-polaroid-photo"><img src="images/first-hotpot2.png"></div>
+            <div class="tl-polaroid-caption">Our first hotpot</div>
+          </div>
+          <div class="tl-polaroid">
+            <div class="tl-polaroid-photo"><img src="images/first-hotpot3.png"></div>
+            <div class="tl-polaroid-caption">Our photobooth pic before our hotpot</div>
+          </div>
+        </div>
+      </div>
+  </div>
+
+  <!-- Entry 60 -->
+  <div class="tl-item">
+    <div class="tl-content">
+      <span class="tl-date-tag">✦ Dec 25, 2025</span>
+      <h3 class="tl-title">Third Christmas Together</h3>
+      <p class="tl-desc">The third Christmas we spent together. Just like the previous ones, hindi na naman tayo magkasama in person to celebrate it but I'm glad I still have you this Christmas.</p>
+    </div>
+    <div class="tl-dot"><div class="tl-dot-circle"></div><span class="tl-dot-year">Dec</span></div>
+    <div class="tl-media"><div class="tl-polaroid"><div class="tl-polaroid-photo"><img src="images/3rd-christmas.png" alt="Christmas"></div><div class="tl-polaroid-caption">Us 7 days before Christmas.</div></div></div>
+  </div>
+
+  <!-- Entry 61 -->
+  <div class="tl-item tl-item-full">
+    <div class="tl-content">
+      <span class="tl-date-tag">✦ Dec 31, 2025</span>
+      <h3 class="tl-title">Third New Year Together</h3>
+      <p class="tl-desc">The third New Year we celebrated together. As usual, hindi na naman tayo magkasama in person pero I'm glad we had each other's back sa buong 2025. I hope tayo pa rin sa buong 2026 hehe.
+      </p>
+    </div>
+    <div class="tl-dot"><div class="tl-dot-circle"></div><span class="tl-dot-year">Dec</span></div>
+  </div>
+   <div class="tl-year-marker reveal">
+    <span>2 0 2 6</span>
+  </div>
+  <!-- Entry 62 -->
+  <div class="tl-item tl-item-full">
+    <div class="tl-content">
+      <span class="tl-date-tag">✦ Jan 4, 2026</span>
+      <h3 class="tl-title">Enchanted Kingdom</h3>
+      <p class="tl-desc">We went to Enchanted Kingdom and this is the first time we went to an amusement park together as a couple. I really didn't like extreme rides pero wala akong choice kung hindi sumama sa'yo.
+        I really had fun kahit takot ako sa ibang rides na sinakyan natin and ayoko na ulitin yung iba (i'm sorry huhu).
+      </p>
+    </div>
+    <div class="tl-dot"><div class="tl-dot-circle"></div><span class="tl-dot-year">2026</span></div>
+      <div class="tl-media">
+        <div class="polaroid-group">
+          <div class="tl-polaroid">
+            <div class="tl-polaroid-photo"><img src="images/ek.png"></div>
+            <div class="tl-polaroid-caption">I'm holding the price I won sa isang booth</div>
+          </div>
+          <div class="tl-polaroid">
+            <div class="tl-polaroid-photo"><img src="images/ek2.png"></div>
+          </div>
+          <div class="tl-polaroid">
+            <div class="tl-polaroid-photo"><img src="images/ek3.png"></div>
+            <div class="tl-polaroid-caption">Us with my siblings tsaka ibang friends natin</div>
+          </div>
+        </div>
+      </div>
+  </div>
+
+  <!-- Entry 63 -->
+  <div class="tl-item tl-item-full">
+    <div class="tl-content">
+      <span class="tl-date-tag">✦ Feb 14, 2026</span>
+      <h3 class="tl-title">Third Valentine's Date</h3>
+      <p class="tl-desc">The third time we celebrated Valentine's Day together. Pumunta ako sa house niyo to celebrate it together. Although hindi masyadong mahaba yung time natin together na magkasama, we tried
+        to enjoy every minute of it. We ate some foods and revealed our gifts to one another.
+      </p>
+    </div>
+    <div class="tl-dot"><div class="tl-dot-circle"></div><span class="tl-dot-year">Feb</span></div>
+      <div class="tl-media">
+        <div class="polaroid-group">
+          <div class="tl-polaroid">
+            <div class="tl-polaroid-photo"><img src="images/3rd-valentine.png"></div>
+          </div>
+          <div class="tl-polaroid">
+            <div class="tl-polaroid-photo"><img src="images/3rd-valentine2.png"></div>
+            <div class="tl-polaroid-caption">You holding the flower I gave you</div>
+          </div>
+          <div class="tl-polaroid">
+            <div class="tl-polaroid-photo"><img src="images/3rd-valentine3.png"></div>
+          </div>
+        </div>
+      </div>
+  </div>
+
+  <!-- Entry 64 -->
+  <div class="tl-item tl-item-full tl-item-highlight">
+    <div class="tl-content">
+      <span class="tl-date-tag">✦ Mar 22, 2025</span>
+      <h3 class="tl-title"><b>1000th Day!</b></h3>
+    </div>
+    <div class="tl-dot"><div class="tl-dot-circle"></div><span class="tl-dot-year">Mar</span></div>
+  </div>
+
+  <!-- Entry 65 -->
+  <div class="tl-item tl-item-full">
+    <div class="tl-content">
+      <span class="tl-date-tag">✦ May 16, 2026</span>
+      <h3 class="tl-title">Baby Shower & Gender Reveal</h3>
+      <p class="tl-desc">We attended the baby shower and gender reveal party of my Kuya sa may Jollibee Carmona. It's also the first time we attended such event as a couple. Grabe, tumatanda na talaga tayo.
+        Malay mo tayo na ang next na magpagender reveal mwehehehehe.
+      </p>
+      <p class="tl-tag">We both chose na magiging babae yung anak pero lalaki siya. Pure sadness.</p>
+    </div>
+    <div class="tl-dot"><div class="tl-dot-circle"></div><span class="tl-dot-year">May</span></div>
+      <div class="tl-media">
+        <div class="polaroid-group">
+          <div class="tl-polaroid">
+            <div class="tl-polaroid-photo"><img src="images/gender-reveal.png"></div>
+          </div>
+          <div class="tl-polaroid">
+            <div class="tl-polaroid-photo"><img src="images/gender-reveal2.png"></div>
+            <div class="tl-polaroid-caption">The moment na nireveal yung gender</div>
+          </div>
+          <div class="tl-polaroid">
+            <div class="tl-polaroid-photo"><img src="images/gender-reveal3.png"></div>
+          </div>
+        </div>
+      </div>
+  </div>
+
+  <!-- Entry 66 -->
+  <div class="tl-item tl-item-full">
+    <div class="tl-content">
+      <span class="tl-date-tag">✦ May 17, 2026</span>
+      <h3 class="tl-title">Her 21st Birthday</h3>
+      <p class="tl-desc">You celebrated your 21st birthday with your family. I know you had fun and enjoyed every moment ng bond mo with your family. As you enter adulthood paunti-unti, it's gonna be tough
+        pero I'm here lang if gusto mo magpababy hehehe.
+      </p>
+    </div>
+    <div class="tl-dot"><div class="tl-dot-circle"></div><span class="tl-dot-year">May</span></div>
+     <div class="tl-media">
+        <div class="polaroid-group">
+          <div class="tl-polaroid">
+            <div class="tl-polaroid-photo"><img src="images/21st-bday-jami.png"></div>
+          </div>
+          <div class="tl-polaroid">
+            <div class="tl-polaroid-photo"><img src="images/21st-bday-jami2.png"></div>
+          </div>
+          <div class="tl-polaroid">
+            <div class="tl-polaroid-photo"><img src="images/21st-bday-jami3.png"></div>
+          </div>
+        </div>
+      </div>
+  </div>
+
+  <!-- Entry 67: 3rd ANNIVERSARY -->
+  <div class="tl-item tl-item-full tl-item-highlight">
+    <div class="tl-content">
+      <span class="tl-date-tag" style="background:var(--wine);color:var(--cream);border-color:var(--wine-dark)">★ Jun 26, 2026</span>
+      <h3 class="tl-title">Third Anniversary!</h3>
+      <p class="tl-desc">If you are reading this and you reached this far, it means it's our third anniversary! I'm glad we reached this far and I can't wait to see what the future holds for us.
+        Destiny sometimes won't be kind to us but I know we can get through it together. Let's enjoy this day and savor every moment of it.
+      </p>
+    </div>
+    <div class="tl-dot">
+      <div class="tl-dot-circle" style="background:var(--gold);border-color:var(--gold);animation:heartBeat 1.5s ease-in-out infinite"></div>
+      <span class="tl-dot-year" style="color:var(--gold);font-weight:700">Soon</span>
+    </div>
+  </div>
+
+  <!-- ─── End Cap ─── -->
+  <div class="timeline-end">
+    <span class="timeline-end-heart">🤍</span>
+    <h2 class="timeline-end-text">To be continued...</h2>
+    <p class="timeline-end-sub">"Reserved for our future memories we'll make together"</p>
+  </div>
+
+</main>
+
+  <script src="js/main.js"></script>
+  <script src="js/story.js"></script>
+</body>
+</html>
